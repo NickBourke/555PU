@@ -1,0 +1,8 @@
+LDI 1
+LDI 2
+LDI 4
+LDI 8
+LDI 4
+LDI 2
+JMP 0
+    
