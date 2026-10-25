@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="844" height="580" viewBox="0 0 844 580">
+<style>
+.bg{fill:#fff}
+.w{stroke:#111;stroke-width:1.2;fill:none;stroke-linecap:round}
+.thin{stroke:#888;stroke-width:0.8;fill:none}
+.bus{stroke:#111;stroke-width:2.2;fill:none}
+.box{stroke:#111;stroke-width:1.6;fill:#fbfbf4}
+.blk{stroke:#234;stroke-width:1.6;fill:#eaf1fb}
+.blk2{stroke:#432;stroke-width:1.6;fill:#fbf1e6}
+.blk3{stroke:#243;stroke-width:1.6;fill:#eaf7ec}
+.solid{fill:#111;stroke:#111;stroke-width:1}
+.open{fill:#fff;stroke:#999;stroke-width:1}
+.arrow{stroke:#234;stroke-width:1.8;fill:none;marker-end:url(#ah)}
+text{font-family:Consolas,Menlo,monospace;font-size:11px;fill:#111}
+.lab{fill:#0b4fa8}
+.pin{font-size:8.5px;fill:#666}
+.val{font-size:9.5px;fill:#444}
+.ttl{font-family:Helvetica,Arial,sans-serif;font-size:18px;font-weight:bold}
+.sub{font-family:Helvetica,Arial,sans-serif;font-size:12px;fill:#444}
+.bt{font-family:Helvetica,Arial,sans-serif;font-size:13px;font-weight:bold}
+.bs{font-family:Helvetica,Arial,sans-serif;font-size:11px;fill:#333}
+.un{font-weight:bold;font-size:12px}
+</style>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#234"/></marker></defs>
+<rect width="100%" height="100%" class="bg"/>
+<text x="24.0" y="38.0" class="ttl" text-anchor="start">Schematic conventions</text>
+<text x="24.0" y="58.0" class="sub" text-anchor="start">How to read the 555-PU sheets. Pin numbers on this sheet: 555 / 556-A.</text>
+<g transform="translate(24.0,84.0)">
+<text x="0.0" y="14.0" class="bt" text-anchor="start">Inverter (INV)</text>
+<rect x="110.0" y="40.0" width="90.0" height="70.0" rx="3" class="box"/>
+<text x="155.0" y="71.0" class="un" text-anchor="middle">INV</text>
+<line x1="96.0" y1="62.0" x2="110.0" y2="62.0" class="w"/>
+<text x="113.0" y="65.0" class="pin" text-anchor="start">TRIG</text>
+<text x="107.0" y="59.0" class="pin" text-anchor="end">2/6</text>
+<line x1="96.0" y1="88.0" x2="110.0" y2="88.0" class="w"/>
+<text x="113.0" y="91.0" class="pin" text-anchor="start">THR</text>
+<text x="107.0" y="85.0" class="pin" text-anchor="end">6/2</text>
+<line x1="155.0" y1="26.0" x2="155.0" y2="40.0" class="w"/>
+<text x="155.0" y="50.0" class="pin" text-anchor="middle">RST</text>
+<text x="158.0" y="35.0" class="pin" text-anchor="start">4</text>
+<line x1="200.0" y1="75.0" x2="214.0" y2="75.0" class="w"/>
+<text x="197.0" y="78.0" class="pin" text-anchor="end">OUT</text>
+<text x="203.0" y="72.0" class="pin" text-anchor="start">3/5</text>
+<line x1="96.0" y1="62.0" x2="80.0" y2="62.0" class="w"/>
+<line x1="96.0" y1="88.0" x2="80.0" y2="88.0" class="w"/>
+<line x1="80.0" y1="62.0" x2="80.0" y2="88.0" class="w"/>
+<circle cx="80.0" cy="75.0" r="2.6" class="solid"/>
+<line x1="40.0" y1="75.0" x2="80.0" y2="75.0" class="w"/>
+<text x="36.0" y="79.0" class="lab" text-anchor="end">X</text>
+<line x1="148.0" y1="26.0" x2="162.0" y2="26.0" class="w"/>
+<text x="155.0" y="22.0" class="pin" text-anchor="middle">VCC</text>
+<line x1="214.0" y1="75.0" x2="234.0" y2="75.0" class="w"/>
+<text x="238.0" y="79.0" class="lab" text-anchor="start">nX</text>
+<text x="0.0" y="140.0" class="val" text-anchor="start">TRIG and THR tied: in &lt; 1/3 Vcc → out high,</text>
+<text x="0.0" y="154.0" class="val" text-anchor="start">in &gt; 2/3 Vcc → out low. Schmitt inverter.</text>
+<text x="360.0" y="14.0" class="bt" text-anchor="start">Latch (LATCH)</text>
+<rect x="470.0" y="40.0" width="90.0" height="80.0" rx="3" class="box"/>
+<text x="515.0" y="76.0" class="un" text-anchor="middle">LATCH</text>
+<line x1="456.0" y1="62.0" x2="470.0" y2="62.0" class="w"/>
+<text x="473.0" y="65.0" class="pin" text-anchor="start">TRIG</text>
+<text x="467.0" y="59.0" class="pin" text-anchor="end"></text>
+<line x1="456.0" y1="98.0" x2="470.0" y2="98.0" class="w"/>
+<text x="473.0" y="101.0" class="pin" text-anchor="start">THR</text>
+<text x="467.0" y="95.0" class="pin" text-anchor="end"></text>
+<line x1="515.0" y1="26.0" x2="515.0" y2="40.0" class="w"/>
+<text x="515.0" y="50.0" class="pin" text-anchor="middle">RST</text>
+<text x="518.0" y="35.0" class="pin" text-anchor="start"></text>
+<line x1="560.0" y1="80.0" x2="574.0" y2="80.0" class="w"/>
+<text x="557.0" y="83.0" class="pin" text-anchor="end">OUT</text>
+<text x="563.0" y="77.0" class="pin" text-anchor="start"></text>
+<line x1="456.0" y1="62.0" x2="420.0" y2="62.0" class="w"/>
+<text x="416.0" y="66.0" class="lab" text-anchor="end">set when low</text>
+<line x1="456.0" y1="98.0" x2="420.0" y2="98.0" class="w"/>
+<text x="416.0" y="102.0" class="lab" text-anchor="end">reset when high</text>
+<line x1="515.0" y1="26.0" x2="515.0" y2="18.0" class="w"/>
+<text x="515.0" y="18.0" class="lab" text-anchor="middle">clear when low</text>
+<line x1="574.0" y1="80.0" x2="594.0" y2="80.0" class="w"/>
+<text x="598.0" y="84.0" class="lab" text-anchor="start">Q</text>
+<text x="360.0" y="150.0" class="val" text-anchor="start">TRIG wins over THR; RST overrides both. Neither → hold.</text>
+<text x="0.0" y="200.0" class="bt" text-anchor="start">Diode-AND (100k pull-up)</text>
+<line x1="133.0" y1="226.0" x2="147.0" y2="226.0" class="w"/>
+<text x="140.0" y="222.0" class="pin" text-anchor="middle">VCC</text>
+<line x1="140.0" y1="226.0" x2="140.0" y2="232.0" class="w"/>
+<rect x="136.0" y="232.0" width="8.0" height="18.0" rx="0" class="box"/>
+<line x1="140.0" y1="250.0" x2="140.0" y2="256.0" class="w"/>
+<text x="148.0" y="245.0" class="val" text-anchor="start">100k</text>
+<line x1="140.0" y1="256.0" x2="140.0" y2="294.0" class="w"/>
+<line x1="106.0" y1="264.0" x2="114.0" y2="264.0" class="w"/>
+<line x1="122.0" y1="264.0" x2="130.0" y2="264.0" class="w"/>
+<path d="M122.0,259.0 L122.0,269.0 L114.0,264.0 Z" class="solid"/>
+<line x1="114.0" y1="259.0" x2="114.0" y2="269.0" class="w"/>
+<line x1="130.0" y1="264.0" x2="140.0" y2="264.0" class="w"/>
+<circle cx="140.0" cy="264.0" r="2.6" class="solid"/>
+<text x="102.0" y="268.0" class="lab" text-anchor="end">A</text>
+<line x1="106.0" y1="279.0" x2="114.0" y2="279.0" class="w"/>
+<line x1="122.0" y1="279.0" x2="130.0" y2="279.0" class="w"/>
+<path d="M122.0,274.0 L122.0,284.0 L114.0,279.0 Z" class="solid"/>
+<line x1="114.0" y1="274.0" x2="114.0" y2="284.0" class="w"/>
+<line x1="130.0" y1="279.0" x2="140.0" y2="279.0" class="w"/>
+<circle cx="140.0" cy="279.0" r="2.6" class="solid"/>
+<text x="102.0" y="283.0" class="lab" text-anchor="end">B</text>
+<line x1="106.0" y1="294.0" x2="114.0" y2="294.0" class="w"/>
+<line x1="122.0" y1="294.0" x2="130.0" y2="294.0" class="w"/>
+<path d="M122.0,289.0 L122.0,299.0 L114.0,294.0 Z" class="solid"/>
+<line x1="114.0" y1="289.0" x2="114.0" y2="299.0" class="w"/>
+<line x1="130.0" y1="294.0" x2="140.0" y2="294.0" class="w"/>
+<circle cx="140.0" cy="294.0" r="2.6" class="solid"/>
+<text x="102.0" y="298.0" class="lab" text-anchor="end">C</text>
+<line x1="140.0" y1="279.0" x2="200.0" y2="279.0" class="w"/>
+<text x="204.0" y="283.0" class="lab" text-anchor="start">A·B·C</text>
+<text x="0.0" y="324.0" class="val" text-anchor="start">Cathodes to 555 outputs. Any input low pulls the node low.</text>
+<text x="360.0" y="200.0" class="bt" text-anchor="start">Diode-OR (1M pull-down)</text>
+<line x1="420.0" y1="240.0" x2="428.0" y2="240.0" class="w"/>
+<line x1="436.0" y1="240.0" x2="444.0" y2="240.0" class="w"/>
+<path d="M428.0,235.0 L428.0,245.0 L436.0,240.0 Z" class="solid"/>
+<line x1="436.0" y1="235.0" x2="436.0" y2="245.0" class="w"/>
+<line x1="444.0" y1="240.0" x2="470.0" y2="240.0" class="w"/>
+<circle cx="470.0" cy="240.0" r="2.6" class="solid"/>
+<text x="416.0" y="244.0" class="lab" text-anchor="end">P</text>
+<line x1="420.0" y1="258.0" x2="428.0" y2="258.0" class="w"/>
+<line x1="436.0" y1="258.0" x2="444.0" y2="258.0" class="w"/>
+<path d="M428.0,253.0 L428.0,263.0 L436.0,258.0 Z" class="solid"/>
+<line x1="436.0" y1="253.0" x2="436.0" y2="263.0" class="w"/>
+<line x1="444.0" y1="258.0" x2="470.0" y2="258.0" class="w"/>
+<circle cx="470.0" cy="258.0" r="2.6" class="solid"/>
+<text x="416.0" y="262.0" class="lab" text-anchor="end">Q</text>
+<line x1="420.0" y1="276.0" x2="428.0" y2="276.0" class="w"/>
+<line x1="436.0" y1="276.0" x2="444.0" y2="276.0" class="w"/>
+<path d="M428.0,271.0 L428.0,281.0 L436.0,276.0 Z" class="solid"/>
+<line x1="436.0" y1="271.0" x2="436.0" y2="281.0" class="w"/>
+<line x1="444.0" y1="276.0" x2="470.0" y2="276.0" class="w"/>
+<circle cx="470.0" cy="276.0" r="2.6" class="solid"/>
+<text x="416.0" y="280.0" class="lab" text-anchor="end">R</text>
+<line x1="470.0" y1="240.0" x2="470.0" y2="290.0" class="bus"/>
+<line x1="470.0" y1="284.0" x2="530.0" y2="284.0" class="w"/>
+<circle cx="470.0" cy="284.0" r="2.6" class="solid"/>
+<text x="534.0" y="288.0" class="lab" text-anchor="start">P+Q+R → TRIG/THR</text>
+<line x1="470.0" y1="290.0" x2="470.0" y2="294.0" class="w"/>
+<rect x="466.0" y="294.0" width="8.0" height="18.0" rx="0" class="box"/>
+<line x1="470.0" y1="312.0" x2="470.0" y2="316.0" class="w"/>
+<text x="478.0" y="307.0" class="val" text-anchor="start">1M</text>
+<line x1="463.0" y1="316.0" x2="477.0" y2="316.0" class="w"/>
+<line x1="465.5" y1="319.0" x2="474.5" y2="319.0" class="w"/>
+<line x1="468.0" y1="322.0" x2="472.0" y2="322.0" class="w"/>
+<text x="360.0" y="340.0" class="val" text-anchor="start">Anodes from AND nodes or 555 outputs. Any input high pulls it high.</text>
+<text x="0.0" y="380.0" class="bt" text-anchor="start">Design rule and naming</text>
+<text x="0.0" y="404.0" class="bs" text-anchor="start">• Between two 555s: at most one diode-AND, then one diode-OR (a sum of products).</text>
+<text x="0.0" y="420.0" class="bs" text-anchor="start">• Every AND input is a 555 output. nX is always an inverter driven by X.</text>
+<text x="0.0" y="436.0" class="bs" text-anchor="start">• Blue names are nets: a 555 output, or a node named in NETLIST.md / netlist.csv.</text>
+<text x="0.0" y="452.0" class="bs" text-anchor="start">• Unit names like U12A are TLC556 package + half. Small numbers are package pins.</text>
+<text x="0.0" y="468.0" class="bs" text-anchor="start">• 556 pins differ from 555: timer A TRIG=6 THR=2 OUT=5 RST=4; timer B TRIG=8 THR=12 OUT=9 RST=10.</text>
+</g>
+</svg>

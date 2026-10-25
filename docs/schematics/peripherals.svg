@@ -1,0 +1,260 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="948" height="788" viewBox="0 0 948 788">
+<style>
+.bg{fill:#fff}
+.w{stroke:#111;stroke-width:1.2;fill:none;stroke-linecap:round}
+.thin{stroke:#888;stroke-width:0.8;fill:none}
+.bus{stroke:#111;stroke-width:2.2;fill:none}
+.box{stroke:#111;stroke-width:1.6;fill:#fbfbf4}
+.blk{stroke:#234;stroke-width:1.6;fill:#eaf1fb}
+.blk2{stroke:#432;stroke-width:1.6;fill:#fbf1e6}
+.blk3{stroke:#243;stroke-width:1.6;fill:#eaf7ec}
+.solid{fill:#111;stroke:#111;stroke-width:1}
+.open{fill:#fff;stroke:#999;stroke-width:1}
+.arrow{stroke:#234;stroke-width:1.8;fill:none;marker-end:url(#ah)}
+text{font-family:Consolas,Menlo,monospace;font-size:11px;fill:#111}
+.lab{fill:#0b4fa8}
+.pin{font-size:8.5px;fill:#666}
+.val{font-size:9.5px;fill:#444}
+.ttl{font-family:Helvetica,Arial,sans-serif;font-size:18px;font-weight:bold}
+.sub{font-family:Helvetica,Arial,sans-serif;font-size:12px;fill:#444}
+.bt{font-family:Helvetica,Arial,sans-serif;font-size:13px;font-weight:bold}
+.bs{font-family:Helvetica,Arial,sans-serif;font-size:11px;fill:#333}
+.un{font-weight:bold;font-size:12px}
+</style>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#234"/></marker></defs>
+<rect width="100%" height="100%" class="bg"/>
+<text x="24.0" y="38.0" class="ttl" text-anchor="start">Peripherals: clock source, reset, LEDs, inputs</text>
+<text x="24.0" y="58.0" class="sub" text-anchor="start">All timers are TLC556 halves (CMOS 555) at 9 V. Small numbers are TLC556 pin numbers.</text>
+<text x="24.0" y="74.0" class="sub" text-anchor="start">Every package: 100 nF VCC–GND. Every logic timer: 10 nF CV–GND, DIS unconnected.</text>
+<g transform="translate(24.0,100.0)">
+<text x="0.0" y="14.0" class="bt" text-anchor="start">RUN clock: astable, U1A (1.3–10 Hz)</text>
+<rect x="170.0" y="60.0" width="110.0" height="130.0" rx="3" class="box"/>
+<text x="225.0" y="121.0" class="un" text-anchor="middle">U1A</text>
+<text x="225.0" y="136.0" class="pin" text-anchor="middle">astable</text>
+<line x1="156.0" y1="84.0" x2="170.0" y2="84.0" class="w"/>
+<text x="173.0" y="87.0" class="pin" text-anchor="start">DIS</text>
+<text x="167.0" y="81.0" class="pin" text-anchor="end">1</text>
+<line x1="156.0" y1="124.0" x2="170.0" y2="124.0" class="w"/>
+<text x="173.0" y="127.0" class="pin" text-anchor="start">THR</text>
+<text x="167.0" y="121.0" class="pin" text-anchor="end">2</text>
+<line x1="156.0" y1="148.0" x2="170.0" y2="148.0" class="w"/>
+<text x="173.0" y="151.0" class="pin" text-anchor="start">TRIG</text>
+<text x="167.0" y="145.0" class="pin" text-anchor="end">6</text>
+<line x1="225.0" y1="46.0" x2="225.0" y2="60.0" class="w"/>
+<text x="225.0" y="70.0" class="pin" text-anchor="middle">RST</text>
+<text x="228.0" y="55.0" class="pin" text-anchor="start">4</text>
+<line x1="280.0" y1="124.0" x2="294.0" y2="124.0" class="w"/>
+<text x="277.0" y="127.0" class="pin" text-anchor="end">OUT</text>
+<text x="283.0" y="121.0" class="pin" text-anchor="start">5</text>
+<line x1="225.0" y1="190.0" x2="225.0" y2="204.0" class="w"/>
+<text x="225.0" y="186.0" class="pin" text-anchor="middle">CV</text>
+<text x="228.0" y="201.0" class="pin" text-anchor="start">3</text>
+<line x1="83.0" y1="30.0" x2="97.0" y2="30.0" class="w"/>
+<text x="90.0" y="26.0" class="pin" text-anchor="middle">VCC</text>
+<line x1="90.0" y1="30.0" x2="90.0" y2="41.0" class="w"/>
+<rect x="86.0" y="41.0" width="8.0" height="18.0" rx="0" class="box"/>
+<line x1="90.0" y1="59.0" x2="90.0" y2="70.0" class="w"/>
+<text x="82.0" y="54.0" class="val" text-anchor="end">R1 10k</text>
+<line x1="90.0" y1="70.0" x2="90.0" y2="84.0" class="w"/>
+<line x1="90.0" y1="84.0" x2="156.0" y2="84.0" class="w"/>
+<circle cx="90.0" cy="84.0" r="2.6" class="solid"/>
+<line x1="90.0" y1="84.0" x2="90.0" y2="91.0" class="w"/>
+<rect x="86.0" y="91.0" width="8.0" height="18.0" rx="0" class="box"/>
+<line x1="90.0" y1="109.0" x2="90.0" y2="116.0" class="w"/>
+<text x="82.0" y="104.0" class="val" text-anchor="end">R2 10k</text>
+<line x1="90.0" y1="116.0" x2="90.0" y2="123.0" class="w"/>
+<rect x="86.0" y="123.0" width="8.0" height="18.0" rx="0" class="box"/>
+<line x1="90.0" y1="141.0" x2="90.0" y2="148.0" class="w"/>
+<text x="82.0" y="136.0" class="val" text-anchor="end">RV 100k pot</text>
+<line x1="90.0" y1="148.0" x2="90.0" y2="156.0" class="w"/>
+<line x1="156.0" y1="124.0" x2="140.0" y2="124.0" class="w"/>
+<line x1="156.0" y1="148.0" x2="140.0" y2="148.0" class="w"/>
+<line x1="140.0" y1="124.0" x2="140.0" y2="156.0" class="w"/>
+<line x1="90.0" y1="156.0" x2="140.0" y2="156.0" class="w"/>
+<circle cx="140.0" cy="148.0" r="2.6" class="solid"/>
+<circle cx="90.0" cy="156.0" r="2.6" class="solid"/>
+<line x1="90.0" y1="156.0" x2="90.0" y2="175.0" class="w"/>
+<line x1="82.0" y1="175.0" x2="98.0" y2="175.0" class="w"/>
+<line x1="82.0" y1="181.0" x2="98.0" y2="181.0" class="w"/>
+<line x1="90.0" y1="181.0" x2="90.0" y2="200.0" class="w"/>
+<text x="100.0" y="172.0" class="val" text-anchor="start">+</text>
+<text x="102.0" y="182.0" class="val" text-anchor="start">4.7µF</text>
+<line x1="83.0" y1="200.0" x2="97.0" y2="200.0" class="w"/>
+<line x1="85.5" y1="203.0" x2="94.5" y2="203.0" class="w"/>
+<line x1="88.0" y1="206.0" x2="92.0" y2="206.0" class="w"/>
+<line x1="218.0" y1="46.0" x2="232.0" y2="46.0" class="w"/>
+<text x="225.0" y="42.0" class="pin" text-anchor="middle">VCC</text>
+<line x1="225.0" y1="204.0" x2="225.0" y2="214.0" class="w"/>
+<line x1="217.0" y1="214.0" x2="233.0" y2="214.0" class="w"/>
+<line x1="217.0" y1="220.0" x2="233.0" y2="220.0" class="w"/>
+<line x1="225.0" y1="220.0" x2="225.0" y2="230.0" class="w"/>
+<text x="237.0" y="221.0" class="val" text-anchor="start">10nF</text>
+<line x1="218.0" y1="230.0" x2="232.0" y2="230.0" class="w"/>
+<line x1="220.5" y1="233.0" x2="229.5" y2="233.0" class="w"/>
+<line x1="223.0" y1="236.0" x2="227.0" y2="236.0" class="w"/>
+<line x1="294.0" y1="124.0" x2="324.0" y2="124.0" class="w"/>
+<text x="328.0" y="128.0" class="lab" text-anchor="start">SRC_RUN</text>
+<text x="470.0" y="14.0" class="bt" text-anchor="start">STEP button: debounced latch, U1B</text>
+<rect x="690.0" y="80.0" width="110.0" height="130.0" rx="3" class="box"/>
+<text x="745.0" y="141.0" class="un" text-anchor="middle">U1B</text>
+<text x="745.0" y="156.0" class="pin" text-anchor="middle">SR latch</text>
+<line x1="676.0" y1="120.0" x2="690.0" y2="120.0" class="w"/>
+<text x="693.0" y="123.0" class="pin" text-anchor="start">TRIG</text>
+<text x="687.0" y="117.0" class="pin" text-anchor="end">8</text>
+<line x1="676.0" y1="170.0" x2="690.0" y2="170.0" class="w"/>
+<text x="693.0" y="173.0" class="pin" text-anchor="start">THR</text>
+<text x="687.0" y="167.0" class="pin" text-anchor="end">12</text>
+<line x1="745.0" y1="66.0" x2="745.0" y2="80.0" class="w"/>
+<text x="745.0" y="90.0" class="pin" text-anchor="middle">RST</text>
+<text x="748.0" y="75.0" class="pin" text-anchor="start">10</text>
+<line x1="800.0" y1="144.0" x2="814.0" y2="144.0" class="w"/>
+<text x="797.0" y="147.0" class="pin" text-anchor="end">OUT</text>
+<text x="803.0" y="141.0" class="pin" text-anchor="start">9</text>
+<line x1="745.0" y1="210.0" x2="745.0" y2="224.0" class="w"/>
+<text x="745.0" y="206.0" class="pin" text-anchor="middle">CV</text>
+<text x="748.0" y="221.0" class="pin" text-anchor="start">11</text>
+<circle cx="560.0" cy="92.0" r="3" class="open"/>
+<circle cx="560.0" cy="120.0" r="3" class="open"/>
+<circle cx="510.0" cy="170.0" r="3" class="solid"/>
+<line x1="510.0" y1="170.0" x2="557.0" y2="95.0" class="w"/>
+<line x1="510.0" y1="170.0" x2="510.0" y2="190.0" class="w"/>
+<line x1="503.0" y1="190.0" x2="517.0" y2="190.0" class="w"/>
+<line x1="505.5" y1="193.0" x2="514.5" y2="193.0" class="w"/>
+<line x1="508.0" y1="196.0" x2="512.0" y2="196.0" class="w"/>
+<text x="502.0" y="156.0" class="val" text-anchor="end">STEP</text>
+<text x="502.0" y="168.0" class="val" text-anchor="end">(push)</text>
+<text x="566.0" y="86.0" class="pin" text-anchor="start">NC</text>
+<text x="566.0" y="134.0" class="pin" text-anchor="start">NO</text>
+<line x1="560.0" y1="89.0" x2="560.0" y2="66.0" class="w"/>
+<line x1="560.0" y1="66.0" x2="745.0" y2="66.0" class="w"/>
+<line x1="563.0" y1="120.0" x2="676.0" y2="120.0" class="w"/>
+<line x1="603.0" y1="36.0" x2="617.0" y2="36.0" class="w"/>
+<text x="610.0" y="32.0" class="pin" text-anchor="middle">VCC</text>
+<line x1="610.0" y1="36.0" x2="610.0" y2="42.0" class="w"/>
+<rect x="606.0" y="42.0" width="8.0" height="18.0" rx="0" class="box"/>
+<line x1="610.0" y1="60.0" x2="610.0" y2="66.0" class="w"/>
+<text x="602.0" y="55.0" class="val" text-anchor="end">10k</text>
+<circle cx="610.0" cy="66.0" r="2.6" class="solid"/>
+<line x1="643.0" y1="86.0" x2="657.0" y2="86.0" class="w"/>
+<text x="650.0" y="82.0" class="pin" text-anchor="middle">VCC</text>
+<line x1="650.0" y1="86.0" x2="650.0" y2="94.0" class="w"/>
+<rect x="646.0" y="94.0" width="8.0" height="18.0" rx="0" class="box"/>
+<line x1="650.0" y1="112.0" x2="650.0" y2="120.0" class="w"/>
+<text x="658.0" y="107.0" class="val" text-anchor="start">10k</text>
+<circle cx="650.0" cy="120.0" r="2.6" class="solid"/>
+<line x1="676.0" y1="170.0" x2="660.0" y2="170.0" class="w"/>
+<line x1="660.0" y1="170.0" x2="660.0" y2="182.0" class="w"/>
+<line x1="653.0" y1="182.0" x2="667.0" y2="182.0" class="w"/>
+<line x1="655.5" y1="185.0" x2="664.5" y2="185.0" class="w"/>
+<line x1="658.0" y1="188.0" x2="662.0" y2="188.0" class="w"/>
+<line x1="745.0" y1="224.0" x2="745.0" y2="234.0" class="w"/>
+<line x1="737.0" y1="234.0" x2="753.0" y2="234.0" class="w"/>
+<line x1="737.0" y1="240.0" x2="753.0" y2="240.0" class="w"/>
+<line x1="745.0" y1="240.0" x2="745.0" y2="250.0" class="w"/>
+<text x="757.0" y="241.0" class="val" text-anchor="start">10nF</text>
+<line x1="738.0" y1="250.0" x2="752.0" y2="250.0" class="w"/>
+<line x1="740.5" y1="253.0" x2="749.5" y2="253.0" class="w"/>
+<line x1="743.0" y1="256.0" x2="747.0" y2="256.0" class="w"/>
+<line x1="814.0" y1="144.0" x2="844.0" y2="144.0" class="w"/>
+<text x="848.0" y="148.0" class="lab" text-anchor="start">SRC_STEP</text>
+<text x="470.0" y="268.0" class="val" text-anchor="start">Press: NO pulls TRIG low → OUT high (master phase).</text>
+<text x="470.0" y="282.0" class="val" text-anchor="start">Release: NC pulls RST low → OUT low (slaves copy, LEDs update).</text>
+<text x="470.0" y="296.0" class="val" text-anchor="start">Bounce between contacts: both pulled high → latch holds.</text>
+<text x="0.0" y="340.0" class="bt" text-anchor="start">RUN/STEP selector</text>
+<circle cx="60.0" cy="380.0" r="3" class="open"/>
+<circle cx="60.0" cy="420.0" r="3" class="open"/>
+<text x="54.0" y="384.0" class="lab" text-anchor="end">SRC_RUN</text>
+<text x="54.0" y="424.0" class="lab" text-anchor="end">SRC_STEP</text>
+<circle cx="140.0" cy="400.0" r="3" class="solid"/>
+<line x1="140.0" y1="400.0" x2="64.0" y2="382.0" class="w"/>
+<line x1="140.0" y1="400.0" x2="220.0" y2="400.0" class="w"/>
+<circle cx="190.0" cy="400.0" r="2.6" class="solid"/>
+<line x1="183.0" y1="360.0" x2="197.0" y2="360.0" class="w"/>
+<text x="190.0" y="356.0" class="pin" text-anchor="middle">VCC</text>
+<line x1="190.0" y1="360.0" x2="190.0" y2="371.0" class="w"/>
+<rect x="186.0" y="371.0" width="8.0" height="18.0" rx="0" class="box"/>
+<line x1="190.0" y1="389.0" x2="190.0" y2="400.0" class="w"/>
+<text x="198.0" y="384.0" class="val" text-anchor="start">100k</text>
+<text x="224.0" y="404.0" class="lab" text-anchor="start">SRC</text>
+<text x="0.0" y="450.0" class="val" text-anchor="start">100k pull-up: SRC rests high (harmless master phase) while</text>
+<text x="0.0" y="464.0" class="val" text-anchor="start">the contacts are in transit. Hold RESET while switching.</text>
+<text x="470.0" y="340.0" class="bt" text-anchor="start">Reset (nRST)</text>
+<line x1="523.0" y1="364.0" x2="537.0" y2="364.0" class="w"/>
+<text x="530.0" y="360.0" class="pin" text-anchor="middle">VCC</text>
+<line x1="530.0" y1="364.0" x2="530.0" y2="375.0" class="w"/>
+<rect x="526.0" y="375.0" width="8.0" height="18.0" rx="0" class="box"/>
+<line x1="530.0" y1="393.0" x2="530.0" y2="404.0" class="w"/>
+<text x="522.0" y="388.0" class="val" text-anchor="end">10k</text>
+<line x1="530.0" y1="404.0" x2="770.0" y2="404.0" class="w"/>
+<circle cx="530.0" cy="404.0" r="2.6" class="solid"/>
+<line x1="530.0" y1="404.0" x2="530.0" y2="424.0" class="w"/>
+<line x1="522.0" y1="424.0" x2="538.0" y2="424.0" class="w"/>
+<line x1="522.0" y1="430.0" x2="538.0" y2="430.0" class="w"/>
+<line x1="530.0" y1="430.0" x2="530.0" y2="450.0" class="w"/>
+<text x="540.0" y="421.0" class="val" text-anchor="start">+</text>
+<text x="518.0" y="431.0" class="val" text-anchor="end">10µF</text>
+<line x1="523.0" y1="450.0" x2="537.0" y2="450.0" class="w"/>
+<line x1="525.5" y1="453.0" x2="534.5" y2="453.0" class="w"/>
+<line x1="528.0" y1="456.0" x2="532.0" y2="456.0" class="w"/>
+<circle cx="610.0" cy="404.0" r="2.6" class="solid"/>
+<line x1="610.0" y1="404.0" x2="610.0" y2="416.0" class="w"/>
+<circle cx="610.0" cy="418.0" r="2.5" class="open"/>
+<circle cx="610.0" cy="438.0" r="2.5" class="open"/>
+<line x1="620.0" y1="414.0" x2="620.0" y2="442.0" class="w"/>
+<line x1="620.0" y1="428.0" x2="630.0" y2="428.0" class="w"/>
+<text x="634.0" y="432.0" class="pin" text-anchor="start">RESET</text>
+<line x1="610.0" y1="440.0" x2="610.0" y2="450.0" class="w"/>
+<line x1="603.0" y1="450.0" x2="617.0" y2="450.0" class="w"/>
+<line x1="605.5" y1="453.0" x2="614.5" y2="453.0" class="w"/>
+<line x1="608.0" y1="456.0" x2="612.0" y2="456.0" class="w"/>
+<circle cx="700.0" cy="404.0" r="2.6" class="solid"/>
+<line x1="700.0" y1="364.0" x2="700.0" y2="372.0" class="w"/>
+<line x1="700.0" y1="380.0" x2="700.0" y2="388.0" class="w"/>
+<path d="M695.0,380.0 L705.0,380.0 L700.0,372.0 Z" class="solid"/>
+<line x1="695.0" y1="372.0" x2="705.0" y2="372.0" class="w"/>
+<line x1="700.0" y1="388.0" x2="700.0" y2="404.0" class="w"/>
+<line x1="693.0" y1="364.0" x2="707.0" y2="364.0" class="w"/>
+<text x="700.0" y="360.0" class="pin" text-anchor="middle">VCC</text>
+<text x="708.0" y="380.0" class="val" text-anchor="start">1N4148</text>
+<text x="774.0" y="408.0" class="lab" text-anchor="start">nRST</text>
+<text x="470.0" y="480.0" class="val" text-anchor="start">→ RST of every slave latch and of nMEN.</text>
+<text x="0.0" y="520.0" class="bt" text-anchor="start">Output LEDs (×9: A0–A3, CF, PC0–PC3)</text>
+<text x="60.0" y="564.0" class="lab" text-anchor="end">A0</text>
+<line x1="64.0" y1="560.0" x2="88.0" y2="560.0" class="w"/>
+<rect x="88.0" y="556.0" width="18.0" height="8.0" rx="0" class="box"/>
+<line x1="106.0" y1="560.0" x2="130.0" y2="560.0" class="w"/>
+<text x="97.0" y="552.0" class="val" text-anchor="middle">4.7k</text>
+<line x1="130.0" y1="560.0" x2="150.0" y2="560.0" class="w"/>
+<line x1="150.0" y1="560.0" x2="150.0" y2="572.0" class="w"/>
+<line x1="150.0" y1="572.0" x2="150.0" y2="580.0" class="w"/>
+<line x1="150.0" y1="588.0" x2="150.0" y2="596.0" class="w"/>
+<path d="M145.0,580.0 L155.0,580.0 L150.0,588.0 Z" class="solid"/>
+<line x1="145.0" y1="588.0" x2="155.0" y2="588.0" class="w"/>
+<line x1="160.0" y1="580.0" x2="168.0" y2="576.0" class="w"/>
+<line x1="162.0" y1="586.0" x2="170.0" y2="582.0" class="w"/>
+<line x1="143.0" y1="596.0" x2="157.0" y2="596.0" class="w"/>
+<line x1="145.5" y1="599.0" x2="154.5" y2="599.0" class="w"/>
+<line x1="148.0" y1="602.0" x2="152.0" y2="602.0" class="w"/>
+<text x="180.0" y="584.0" class="val" text-anchor="start">high-efficiency LED</text>
+<text x="470.0" y="520.0" class="bt" text-anchor="start">Input switches (×4: SW0–SW3)</text>
+<line x1="503.0" y1="546.0" x2="517.0" y2="546.0" class="w"/>
+<text x="510.0" y="542.0" class="pin" text-anchor="middle">VCC</text>
+<line x1="510.0" y1="546.0" x2="510.0" y2="556.0" class="w"/>
+<circle cx="510.0" cy="558.0" r="2.5" class="open"/>
+<line x1="510.0" y1="560.0" x2="524.0" y2="576.0" class="w"/>
+<circle cx="510.0" cy="580.0" r="2.5" class="open"/>
+<text x="530.0" y="570.0" class="val" text-anchor="start">DIP (ON = 1)</text>
+<line x1="510.0" y1="582.0" x2="510.0" y2="596.0" class="w"/>
+<circle cx="510.0" cy="596.0" r="2.6" class="solid"/>
+<line x1="510.0" y1="596.0" x2="630.0" y2="596.0" class="w"/>
+<text x="634.0" y="600.0" class="lab" text-anchor="start">SW0</text>
+<line x1="510.0" y1="596.0" x2="510.0" y2="607.0" class="w"/>
+<rect x="506.0" y="607.0" width="8.0" height="18.0" rx="0" class="box"/>
+<line x1="510.0" y1="625.0" x2="510.0" y2="636.0" class="w"/>
+<text x="502.0" y="620.0" class="val" text-anchor="end">4.7k</text>
+<line x1="503.0" y1="636.0" x2="517.0" y2="636.0" class="w"/>
+<line x1="505.5" y1="639.0" x2="514.5" y2="639.0" class="w"/>
+<line x1="508.0" y1="642.0" x2="512.0" y2="642.0" class="w"/>
+<text x="470.0" y="660.0" class="val" text-anchor="start">Feeds the AND term CND·nJ·SW0 on ROM bit line I0.</text>
+</g>
+</svg>

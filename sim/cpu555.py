@@ -571,6 +571,9 @@ def main():
     n_pkg, n_timers, d = write_netlists(chips, wl)
     print(f"{n_timers} timers in {n_pkg} x 556, {d} logic diodes -> NETLIST.md, netlist.csv")
 
+    import drawings
+    print(f"{len(drawings.write_all())} drawings -> docs/")
+
 
 if __name__ == "__main__":
     main()

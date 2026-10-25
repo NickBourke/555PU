@@ -1,0 +1,281 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1191" height="392" viewBox="0 0 1191 392">
+<style>
+.bg{fill:#fff}
+.w{stroke:#111;stroke-width:1.2;fill:none;stroke-linecap:round}
+.thin{stroke:#888;stroke-width:0.8;fill:none}
+.bus{stroke:#111;stroke-width:2.2;fill:none}
+.box{stroke:#111;stroke-width:1.6;fill:#fbfbf4}
+.blk{stroke:#234;stroke-width:1.6;fill:#eaf1fb}
+.blk2{stroke:#432;stroke-width:1.6;fill:#fbf1e6}
+.blk3{stroke:#243;stroke-width:1.6;fill:#eaf7ec}
+.solid{fill:#111;stroke:#111;stroke-width:1}
+.open{fill:#fff;stroke:#999;stroke-width:1}
+.arrow{stroke:#234;stroke-width:1.8;fill:none;marker-end:url(#ah)}
+text{font-family:Consolas,Menlo,monospace;font-size:11px;fill:#111}
+.lab{fill:#0b4fa8}
+.pin{font-size:8.5px;fill:#666}
+.val{font-size:9.5px;fill:#444}
+.ttl{font-family:Helvetica,Arial,sans-serif;font-size:18px;font-weight:bold}
+.sub{font-family:Helvetica,Arial,sans-serif;font-size:12px;fill:#444}
+.bt{font-family:Helvetica,Arial,sans-serif;font-size:13px;font-weight:bold}
+.bs{font-family:Helvetica,Arial,sans-serif;font-size:11px;fill:#333}
+.un{font-weight:bold;font-size:12px}
+</style>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#234"/></marker></defs>
+<rect width="100%" height="100%" class="bg"/>
+<text x="24.0" y="38.0" class="ttl" text-anchor="start">Clock interlock</text>
+<text x="24.0" y="58.0" class="sub" text-anchor="start">SRC from the peripherals sheet. A phase opens only after the other phase&#x27;s last</text>
+<text x="24.0" y="74.0" class="sub" text-anchor="start">signal (MOFF / SOFF) reports closed. RST of nMEN = nRST holds the masters open during reset.</text>
+<g transform="translate(24.0,100.0)">
+<g transform="translate(-206.5,0.0)">
+<text x="226.0" y="38.0" class="lab" text-anchor="end">SRC</text>
+<line x1="228.0" y1="34.0" x2="230.0" y2="34.0" class="w"/>
+<line x1="230.0" y1="34.0" x2="236.0" y2="34.0" class="w"/>
+<line x1="236.0" y1="22.0" x2="236.0" y2="46.0" class="w"/>
+<circle cx="236.0" cy="34.0" r="2.6" class="solid"/>
+<line x1="236.0" y1="22.0" x2="244.0" y2="22.0" class="w"/>
+<line x1="236.0" y1="46.0" x2="244.0" y2="46.0" class="w"/>
+<rect x="258.0" y="0.0" width="96.0" height="68.0" rx="3" class="box"/>
+<text x="306.0" y="30.0" class="un" text-anchor="middle">U2A</text>
+<text x="306.0" y="45.0" class="pin" text-anchor="middle">INV</text>
+<text x="306.0" y="57.0" class="pin" text-anchor="middle">nSRC</text>
+<line x1="244.0" y1="22.0" x2="258.0" y2="22.0" class="w"/>
+<text x="261.0" y="25.0" class="pin" text-anchor="start">TRIG</text>
+<text x="255.0" y="19.0" class="pin" text-anchor="end">6</text>
+<line x1="244.0" y1="46.0" x2="258.0" y2="46.0" class="w"/>
+<text x="261.0" y="49.0" class="pin" text-anchor="start">THR</text>
+<text x="255.0" y="43.0" class="pin" text-anchor="end">2</text>
+<line x1="306.0" y1="-14.0" x2="306.0" y2="0.0" class="w"/>
+<text x="306.0" y="10.0" class="pin" text-anchor="middle">RST</text>
+<text x="309.0" y="-5.0" class="pin" text-anchor="start">4</text>
+<line x1="354.0" y1="34.0" x2="368.0" y2="34.0" class="w"/>
+<text x="351.0" y="37.0" class="pin" text-anchor="end">OUT</text>
+<text x="357.0" y="31.0" class="pin" text-anchor="start">5</text>
+<line x1="299.0" y1="-14.0" x2="313.0" y2="-14.0" class="w"/>
+<text x="306.0" y="-18.0" class="pin" text-anchor="middle">VCC</text>
+<line x1="368.0" y1="34.0" x2="384.0" y2="34.0" class="w"/>
+<circle cx="384.0" cy="34.0" r="2.6" class="solid"/>
+<text x="388.0" y="38.0" class="lab" text-anchor="start">nSRC</text>
+</g>
+<g transform="translate(145.5,0.0)">
+<line x1="183.0" y1="36.0" x2="197.0" y2="36.0" class="w"/>
+<text x="190.0" y="32.0" class="pin" text-anchor="middle">VCC</text>
+<line x1="190.0" y1="36.0" x2="190.0" y2="40.0" class="w"/>
+<rect x="186.0" y="40.0" width="8.0" height="18.0" rx="0" class="box"/>
+<line x1="190.0" y1="58.0" x2="190.0" y2="62.0" class="w"/>
+<text x="198.0" y="53.0" class="val" text-anchor="start">100k</text>
+<line x1="190.0" y1="62.0" x2="190.0" y2="85.0" class="w"/>
+<line x1="156.0" y1="70.0" x2="164.0" y2="70.0" class="w"/>
+<line x1="172.0" y1="70.0" x2="180.0" y2="70.0" class="w"/>
+<path d="M172.0,65.0 L172.0,75.0 L164.0,70.0 Z" class="solid"/>
+<line x1="164.0" y1="65.0" x2="164.0" y2="75.0" class="w"/>
+<line x1="180.0" y1="70.0" x2="190.0" y2="70.0" class="w"/>
+<circle cx="190.0" cy="70.0" r="2.6" class="solid"/>
+<text x="152.0" y="74.0" class="lab" text-anchor="end">SRC</text>
+<line x1="156.0" y1="85.0" x2="164.0" y2="85.0" class="w"/>
+<line x1="172.0" y1="85.0" x2="180.0" y2="85.0" class="w"/>
+<path d="M172.0,80.0 L172.0,90.0 L164.0,85.0 Z" class="solid"/>
+<line x1="164.0" y1="80.0" x2="164.0" y2="90.0" class="w"/>
+<line x1="180.0" y1="85.0" x2="190.0" y2="85.0" class="w"/>
+<circle cx="190.0" cy="85.0" r="2.6" class="solid"/>
+<text x="152.0" y="89.0" class="lab" text-anchor="end">SOFF</text>
+<line x1="190.0" y1="85.0" x2="230.0" y2="85.0" class="w"/>
+<line x1="230.0" y1="85.0" x2="236.0" y2="85.0" class="w"/>
+<line x1="236.0" y1="73.0" x2="236.0" y2="97.0" class="w"/>
+<circle cx="236.0" cy="85.0" r="2.6" class="solid"/>
+<line x1="236.0" y1="73.0" x2="244.0" y2="73.0" class="w"/>
+<line x1="236.0" y1="97.0" x2="244.0" y2="97.0" class="w"/>
+<rect x="258.0" y="51.0" width="96.0" height="68.0" rx="3" class="box"/>
+<text x="306.0" y="81.0" class="un" text-anchor="middle">U2B</text>
+<text x="306.0" y="96.0" class="pin" text-anchor="middle">INV</text>
+<text x="306.0" y="108.0" class="pin" text-anchor="middle">nMEN</text>
+<line x1="244.0" y1="73.0" x2="258.0" y2="73.0" class="w"/>
+<text x="261.0" y="76.0" class="pin" text-anchor="start">TRIG</text>
+<text x="255.0" y="70.0" class="pin" text-anchor="end">8</text>
+<line x1="244.0" y1="97.0" x2="258.0" y2="97.0" class="w"/>
+<text x="261.0" y="100.0" class="pin" text-anchor="start">THR</text>
+<text x="255.0" y="94.0" class="pin" text-anchor="end">12</text>
+<line x1="306.0" y1="37.0" x2="306.0" y2="51.0" class="w"/>
+<text x="306.0" y="61.0" class="pin" text-anchor="middle">RST</text>
+<text x="309.0" y="46.0" class="pin" text-anchor="start">10</text>
+<line x1="354.0" y1="85.0" x2="368.0" y2="85.0" class="w"/>
+<text x="351.0" y="88.0" class="pin" text-anchor="end">OUT</text>
+<text x="357.0" y="82.0" class="pin" text-anchor="start">9</text>
+<line x1="306.0" y1="37.0" x2="306.0" y2="29.0" class="w"/>
+<text x="306.0" y="29.0" class="lab" text-anchor="middle">nRST</text>
+<line x1="368.0" y1="85.0" x2="384.0" y2="85.0" class="w"/>
+<circle cx="384.0" cy="85.0" r="2.6" class="solid"/>
+<text x="388.0" y="89.0" class="lab" text-anchor="start">nMEN</text>
+</g>
+<g transform="translate(423.5,0.0)">
+<text x="226.0" y="38.0" class="lab" text-anchor="end">nMEN</text>
+<line x1="228.0" y1="34.0" x2="230.0" y2="34.0" class="w"/>
+<line x1="230.0" y1="34.0" x2="236.0" y2="34.0" class="w"/>
+<line x1="236.0" y1="22.0" x2="236.0" y2="46.0" class="w"/>
+<circle cx="236.0" cy="34.0" r="2.6" class="solid"/>
+<line x1="236.0" y1="22.0" x2="244.0" y2="22.0" class="w"/>
+<line x1="236.0" y1="46.0" x2="244.0" y2="46.0" class="w"/>
+<rect x="258.0" y="0.0" width="96.0" height="68.0" rx="3" class="box"/>
+<text x="306.0" y="30.0" class="un" text-anchor="middle">U3A</text>
+<text x="306.0" y="45.0" class="pin" text-anchor="middle">INV</text>
+<text x="306.0" y="57.0" class="pin" text-anchor="middle">MEN</text>
+<line x1="244.0" y1="22.0" x2="258.0" y2="22.0" class="w"/>
+<text x="261.0" y="25.0" class="pin" text-anchor="start">TRIG</text>
+<text x="255.0" y="19.0" class="pin" text-anchor="end">6</text>
+<line x1="244.0" y1="46.0" x2="258.0" y2="46.0" class="w"/>
+<text x="261.0" y="49.0" class="pin" text-anchor="start">THR</text>
+<text x="255.0" y="43.0" class="pin" text-anchor="end">2</text>
+<line x1="306.0" y1="-14.0" x2="306.0" y2="0.0" class="w"/>
+<text x="306.0" y="10.0" class="pin" text-anchor="middle">RST</text>
+<text x="309.0" y="-5.0" class="pin" text-anchor="start">4</text>
+<line x1="354.0" y1="34.0" x2="368.0" y2="34.0" class="w"/>
+<text x="351.0" y="37.0" class="pin" text-anchor="end">OUT</text>
+<text x="357.0" y="31.0" class="pin" text-anchor="start">5</text>
+<line x1="299.0" y1="-14.0" x2="313.0" y2="-14.0" class="w"/>
+<text x="306.0" y="-18.0" class="pin" text-anchor="middle">VCC</text>
+<line x1="368.0" y1="34.0" x2="384.0" y2="34.0" class="w"/>
+<circle cx="384.0" cy="34.0" r="2.6" class="solid"/>
+<text x="388.0" y="38.0" class="lab" text-anchor="start">MEN</text>
+</g>
+<g transform="translate(695.0,0.0)">
+<text x="226.0" y="38.0" class="lab" text-anchor="end">MEN</text>
+<line x1="228.0" y1="34.0" x2="230.0" y2="34.0" class="w"/>
+<line x1="230.0" y1="34.0" x2="236.0" y2="34.0" class="w"/>
+<line x1="236.0" y1="22.0" x2="236.0" y2="46.0" class="w"/>
+<circle cx="236.0" cy="34.0" r="2.6" class="solid"/>
+<line x1="236.0" y1="22.0" x2="244.0" y2="22.0" class="w"/>
+<line x1="236.0" y1="46.0" x2="244.0" y2="46.0" class="w"/>
+<rect x="258.0" y="0.0" width="96.0" height="68.0" rx="3" class="box"/>
+<text x="306.0" y="30.0" class="un" text-anchor="middle">U3B</text>
+<text x="306.0" y="45.0" class="pin" text-anchor="middle">INV</text>
+<text x="306.0" y="57.0" class="pin" text-anchor="middle">MOFF</text>
+<line x1="244.0" y1="22.0" x2="258.0" y2="22.0" class="w"/>
+<text x="261.0" y="25.0" class="pin" text-anchor="start">TRIG</text>
+<text x="255.0" y="19.0" class="pin" text-anchor="end">8</text>
+<line x1="244.0" y1="46.0" x2="258.0" y2="46.0" class="w"/>
+<text x="261.0" y="49.0" class="pin" text-anchor="start">THR</text>
+<text x="255.0" y="43.0" class="pin" text-anchor="end">12</text>
+<line x1="306.0" y1="-14.0" x2="306.0" y2="0.0" class="w"/>
+<text x="306.0" y="10.0" class="pin" text-anchor="middle">RST</text>
+<text x="309.0" y="-5.0" class="pin" text-anchor="start">10</text>
+<line x1="354.0" y1="34.0" x2="368.0" y2="34.0" class="w"/>
+<text x="351.0" y="37.0" class="pin" text-anchor="end">OUT</text>
+<text x="357.0" y="31.0" class="pin" text-anchor="start">9</text>
+<line x1="299.0" y1="-14.0" x2="313.0" y2="-14.0" class="w"/>
+<text x="306.0" y="-18.0" class="pin" text-anchor="middle">VCC</text>
+<line x1="368.0" y1="34.0" x2="384.0" y2="34.0" class="w"/>
+<circle cx="384.0" cy="34.0" r="2.6" class="solid"/>
+<text x="388.0" y="38.0" class="lab" text-anchor="start">MOFF</text>
+</g>
+<g transform="translate(-126.0,149.0)">
+<line x1="183.0" y1="36.0" x2="197.0" y2="36.0" class="w"/>
+<text x="190.0" y="32.0" class="pin" text-anchor="middle">VCC</text>
+<line x1="190.0" y1="36.0" x2="190.0" y2="40.0" class="w"/>
+<rect x="186.0" y="40.0" width="8.0" height="18.0" rx="0" class="box"/>
+<line x1="190.0" y1="58.0" x2="190.0" y2="62.0" class="w"/>
+<text x="198.0" y="53.0" class="val" text-anchor="start">100k</text>
+<line x1="190.0" y1="62.0" x2="190.0" y2="85.0" class="w"/>
+<line x1="156.0" y1="70.0" x2="164.0" y2="70.0" class="w"/>
+<line x1="172.0" y1="70.0" x2="180.0" y2="70.0" class="w"/>
+<path d="M172.0,65.0 L172.0,75.0 L164.0,70.0 Z" class="solid"/>
+<line x1="164.0" y1="65.0" x2="164.0" y2="75.0" class="w"/>
+<line x1="180.0" y1="70.0" x2="190.0" y2="70.0" class="w"/>
+<circle cx="190.0" cy="70.0" r="2.6" class="solid"/>
+<text x="152.0" y="74.0" class="lab" text-anchor="end">nSRC</text>
+<line x1="156.0" y1="85.0" x2="164.0" y2="85.0" class="w"/>
+<line x1="172.0" y1="85.0" x2="180.0" y2="85.0" class="w"/>
+<path d="M172.0,80.0 L172.0,90.0 L164.0,85.0 Z" class="solid"/>
+<line x1="164.0" y1="80.0" x2="164.0" y2="90.0" class="w"/>
+<line x1="180.0" y1="85.0" x2="190.0" y2="85.0" class="w"/>
+<circle cx="190.0" cy="85.0" r="2.6" class="solid"/>
+<text x="152.0" y="89.0" class="lab" text-anchor="end">MOFF</text>
+<line x1="190.0" y1="85.0" x2="230.0" y2="85.0" class="w"/>
+<line x1="230.0" y1="85.0" x2="236.0" y2="85.0" class="w"/>
+<line x1="236.0" y1="73.0" x2="236.0" y2="97.0" class="w"/>
+<circle cx="236.0" cy="85.0" r="2.6" class="solid"/>
+<line x1="236.0" y1="73.0" x2="244.0" y2="73.0" class="w"/>
+<line x1="236.0" y1="97.0" x2="244.0" y2="97.0" class="w"/>
+<rect x="258.0" y="51.0" width="96.0" height="68.0" rx="3" class="box"/>
+<text x="306.0" y="81.0" class="un" text-anchor="middle">U4A</text>
+<text x="306.0" y="96.0" class="pin" text-anchor="middle">INV</text>
+<text x="306.0" y="108.0" class="pin" text-anchor="middle">nSEN</text>
+<line x1="244.0" y1="73.0" x2="258.0" y2="73.0" class="w"/>
+<text x="261.0" y="76.0" class="pin" text-anchor="start">TRIG</text>
+<text x="255.0" y="70.0" class="pin" text-anchor="end">6</text>
+<line x1="244.0" y1="97.0" x2="258.0" y2="97.0" class="w"/>
+<text x="261.0" y="100.0" class="pin" text-anchor="start">THR</text>
+<text x="255.0" y="94.0" class="pin" text-anchor="end">2</text>
+<line x1="306.0" y1="37.0" x2="306.0" y2="51.0" class="w"/>
+<text x="306.0" y="61.0" class="pin" text-anchor="middle">RST</text>
+<text x="309.0" y="46.0" class="pin" text-anchor="start">4</text>
+<line x1="354.0" y1="85.0" x2="368.0" y2="85.0" class="w"/>
+<text x="351.0" y="88.0" class="pin" text-anchor="end">OUT</text>
+<text x="357.0" y="82.0" class="pin" text-anchor="start">5</text>
+<line x1="299.0" y1="37.0" x2="313.0" y2="37.0" class="w"/>
+<text x="306.0" y="33.0" class="pin" text-anchor="middle">VCC</text>
+<line x1="368.0" y1="85.0" x2="384.0" y2="85.0" class="w"/>
+<circle cx="384.0" cy="85.0" r="2.6" class="solid"/>
+<text x="388.0" y="89.0" class="lab" text-anchor="start">nSEN</text>
+</g>
+<g transform="translate(152.0,149.0)">
+<text x="226.0" y="38.0" class="lab" text-anchor="end">nSEN</text>
+<line x1="228.0" y1="34.0" x2="230.0" y2="34.0" class="w"/>
+<line x1="230.0" y1="34.0" x2="236.0" y2="34.0" class="w"/>
+<line x1="236.0" y1="22.0" x2="236.0" y2="46.0" class="w"/>
+<circle cx="236.0" cy="34.0" r="2.6" class="solid"/>
+<line x1="236.0" y1="22.0" x2="244.0" y2="22.0" class="w"/>
+<line x1="236.0" y1="46.0" x2="244.0" y2="46.0" class="w"/>
+<rect x="258.0" y="0.0" width="96.0" height="68.0" rx="3" class="box"/>
+<text x="306.0" y="30.0" class="un" text-anchor="middle">U4B</text>
+<text x="306.0" y="45.0" class="pin" text-anchor="middle">INV</text>
+<text x="306.0" y="57.0" class="pin" text-anchor="middle">SEN</text>
+<line x1="244.0" y1="22.0" x2="258.0" y2="22.0" class="w"/>
+<text x="261.0" y="25.0" class="pin" text-anchor="start">TRIG</text>
+<text x="255.0" y="19.0" class="pin" text-anchor="end">8</text>
+<line x1="244.0" y1="46.0" x2="258.0" y2="46.0" class="w"/>
+<text x="261.0" y="49.0" class="pin" text-anchor="start">THR</text>
+<text x="255.0" y="43.0" class="pin" text-anchor="end">12</text>
+<line x1="306.0" y1="-14.0" x2="306.0" y2="0.0" class="w"/>
+<text x="306.0" y="10.0" class="pin" text-anchor="middle">RST</text>
+<text x="309.0" y="-5.0" class="pin" text-anchor="start">10</text>
+<line x1="354.0" y1="34.0" x2="368.0" y2="34.0" class="w"/>
+<text x="351.0" y="37.0" class="pin" text-anchor="end">OUT</text>
+<text x="357.0" y="31.0" class="pin" text-anchor="start">9</text>
+<line x1="299.0" y1="-14.0" x2="313.0" y2="-14.0" class="w"/>
+<text x="306.0" y="-18.0" class="pin" text-anchor="middle">VCC</text>
+<line x1="368.0" y1="34.0" x2="384.0" y2="34.0" class="w"/>
+<circle cx="384.0" cy="34.0" r="2.6" class="solid"/>
+<text x="388.0" y="38.0" class="lab" text-anchor="start">SEN</text>
+</g>
+<g transform="translate(423.5,149.0)">
+<text x="226.0" y="38.0" class="lab" text-anchor="end">SEN</text>
+<line x1="228.0" y1="34.0" x2="230.0" y2="34.0" class="w"/>
+<line x1="230.0" y1="34.0" x2="236.0" y2="34.0" class="w"/>
+<line x1="236.0" y1="22.0" x2="236.0" y2="46.0" class="w"/>
+<circle cx="236.0" cy="34.0" r="2.6" class="solid"/>
+<line x1="236.0" y1="22.0" x2="244.0" y2="22.0" class="w"/>
+<line x1="236.0" y1="46.0" x2="244.0" y2="46.0" class="w"/>
+<rect x="258.0" y="0.0" width="96.0" height="68.0" rx="3" class="box"/>
+<text x="306.0" y="30.0" class="un" text-anchor="middle">U5A</text>
+<text x="306.0" y="45.0" class="pin" text-anchor="middle">INV</text>
+<text x="306.0" y="57.0" class="pin" text-anchor="middle">SOFF</text>
+<line x1="244.0" y1="22.0" x2="258.0" y2="22.0" class="w"/>
+<text x="261.0" y="25.0" class="pin" text-anchor="start">TRIG</text>
+<text x="255.0" y="19.0" class="pin" text-anchor="end">6</text>
+<line x1="244.0" y1="46.0" x2="258.0" y2="46.0" class="w"/>
+<text x="261.0" y="49.0" class="pin" text-anchor="start">THR</text>
+<text x="255.0" y="43.0" class="pin" text-anchor="end">2</text>
+<line x1="306.0" y1="-14.0" x2="306.0" y2="0.0" class="w"/>
+<text x="306.0" y="10.0" class="pin" text-anchor="middle">RST</text>
+<text x="309.0" y="-5.0" class="pin" text-anchor="start">4</text>
+<line x1="354.0" y1="34.0" x2="368.0" y2="34.0" class="w"/>
+<text x="351.0" y="37.0" class="pin" text-anchor="end">OUT</text>
+<text x="357.0" y="31.0" class="pin" text-anchor="start">5</text>
+<line x1="299.0" y1="-14.0" x2="313.0" y2="-14.0" class="w"/>
+<text x="306.0" y="-18.0" class="pin" text-anchor="middle">VCC</text>
+<line x1="368.0" y1="34.0" x2="384.0" y2="34.0" class="w"/>
+<circle cx="384.0" cy="34.0" r="2.6" class="solid"/>
+<text x="388.0" y="38.0" class="lab" text-anchor="start">SOFF</text>
+</g>
+</g>
+</svg>

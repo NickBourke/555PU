@@ -24,12 +24,33 @@ plain model of the instruction set. It writes two files:
   package and half for each one.
 * [netlist.csv](netlist.csv): every part and every connection, including package
   pin numbers and the peripheral circuits.
+* [docs/](docs/): the block diagram and schematics below, drawn by
+  `sim/drawings.py` from the same netlist.
 
 ```
-python sim/cpu555.py                          # run the tests, regenerate both netlists
+python sim/cpu555.py                          # run the tests, regenerate netlists and drawings
 python sim/cpu555.py programs/countdown.asm   # trace a program
 python sim/cpu555.py programs/double.asm 6    # trace with the input switches set to 6
 ```
+
+![555-PU block diagram](docs/block-diagram.svg)
+
+### Schematics
+
+The logic sheets are generated from the tested netlist, so every diode on them
+is one the simulator checked. Each 555 is labelled with its TLC556 package and
+half (e.g. `U18A`) and its package pin numbers.
+
+| sheet | contents |
+|---|---|
+| [conventions](docs/schematics/conventions.svg) | how to read the sheets: INV, LATCH, diode-AND, diode-OR, the 556 pin map |
+| [peripherals](docs/schematics/peripherals.svg) | astable (U1A), step latch (U1B), RUN/STEP selector, reset, LEDs, input switches |
+| [clock](docs/schematics/clock.svg) | the 7-timer two-phase interlock |
+| [rom](docs/schematics/rom.svg) | decoder, 16 × 8 diode matrix (filled in for `countdown.asm`), input-port terms, 16 restore inverters |
+| [carry](docs/schematics/carry.svg) | adder carry chain C1–C3 / nC1–nC3 |
+| reg-[PC0](docs/schematics/reg-PC0.svg) [PC1](docs/schematics/reg-PC1.svg) [PC2](docs/schematics/reg-PC2.svg) [PC3](docs/schematics/reg-PC3.svg) | program counter bits: master (with jump / +1 logic), slave, inverter |
+| reg-[A0](docs/schematics/reg-A0.svg) [A1](docs/schematics/reg-A1.svg) [A2](docs/schematics/reg-A2.svg) [A3](docs/schematics/reg-A3.svg) | accumulator bits: master (with load / add / hold logic), slave, inverter |
+| [reg-CF](docs/schematics/reg-CF.svg) | carry flag |
 
 ---
 

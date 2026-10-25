@@ -1,0 +1,516 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1002" height="1084" viewBox="0 0 1002 1084">
+<style>
+.bg{fill:#fff}
+.w{stroke:#111;stroke-width:1.2;fill:none;stroke-linecap:round}
+.thin{stroke:#888;stroke-width:0.8;fill:none}
+.bus{stroke:#111;stroke-width:2.2;fill:none}
+.box{stroke:#111;stroke-width:1.6;fill:#fbfbf4}
+.blk{stroke:#234;stroke-width:1.6;fill:#eaf1fb}
+.blk2{stroke:#432;stroke-width:1.6;fill:#fbf1e6}
+.blk3{stroke:#243;stroke-width:1.6;fill:#eaf7ec}
+.solid{fill:#111;stroke:#111;stroke-width:1}
+.open{fill:#fff;stroke:#999;stroke-width:1}
+.arrow{stroke:#234;stroke-width:1.8;fill:none;marker-end:url(#ah)}
+text{font-family:Consolas,Menlo,monospace;font-size:11px;fill:#111}
+.lab{fill:#0b4fa8}
+.pin{font-size:8.5px;fill:#666}
+.val{font-size:9.5px;fill:#444}
+.ttl{font-family:Helvetica,Arial,sans-serif;font-size:18px;font-weight:bold}
+.sub{font-family:Helvetica,Arial,sans-serif;font-size:12px;fill:#444}
+.bt{font-family:Helvetica,Arial,sans-serif;font-size:13px;font-weight:bold}
+.bs{font-family:Helvetica,Arial,sans-serif;font-size:11px;fill:#333}
+.un{font-weight:bold;font-size:12px}
+</style>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#234"/></marker></defs>
+<rect width="100%" height="100%" class="bg"/>
+<text x="24.0" y="38.0" class="ttl" text-anchor="start">Register bit CF</text>
+<text x="24.0" y="58.0" class="sub" text-anchor="start">Master mCF (stores NOT CF) with the next-state logic folded into its TRIG/THR,</text>
+<text x="24.0" y="74.0" class="sub" text-anchor="start">slave CF (cleared by nRST), and inverter nCF.</text>
+<g transform="translate(24.0,100.0)">
+<g transform="translate(-82.5,0.0)">
+<line x1="133.0" y1="36.0" x2="147.0" y2="36.0" class="w"/>
+<text x="140.0" y="32.0" class="pin" text-anchor="middle">VCC</text>
+<line x1="140.0" y1="36.0" x2="140.0" y2="39.0" class="w"/>
+<rect x="136.0" y="39.0" width="8.0" height="18.0" rx="0" class="box"/>
+<line x1="140.0" y1="57.0" x2="140.0" y2="60.0" class="w"/>
+<text x="132.0" y="52.0" class="val" text-anchor="end">100k</text>
+<line x1="140.0" y1="60.0" x2="140.0" y2="113.0" class="w"/>
+<line x1="106.0" y1="68.0" x2="114.0" y2="68.0" class="w"/>
+<line x1="122.0" y1="68.0" x2="130.0" y2="68.0" class="w"/>
+<path d="M122.0,63.0 L122.0,73.0 L114.0,68.0 Z" class="solid"/>
+<line x1="114.0" y1="63.0" x2="114.0" y2="73.0" class="w"/>
+<line x1="130.0" y1="68.0" x2="140.0" y2="68.0" class="w"/>
+<circle cx="140.0" cy="68.0" r="2.6" class="solid"/>
+<text x="102.0" y="72.0" class="lab" text-anchor="end">ADD</text>
+<line x1="106.0" y1="83.0" x2="114.0" y2="83.0" class="w"/>
+<line x1="122.0" y1="83.0" x2="130.0" y2="83.0" class="w"/>
+<path d="M122.0,78.0 L122.0,88.0 L114.0,83.0 Z" class="solid"/>
+<line x1="114.0" y1="78.0" x2="114.0" y2="88.0" class="w"/>
+<line x1="130.0" y1="83.0" x2="140.0" y2="83.0" class="w"/>
+<circle cx="140.0" cy="83.0" r="2.6" class="solid"/>
+<text x="102.0" y="87.0" class="lab" text-anchor="end">A3</text>
+<line x1="106.0" y1="98.0" x2="114.0" y2="98.0" class="w"/>
+<line x1="122.0" y1="98.0" x2="130.0" y2="98.0" class="w"/>
+<path d="M122.0,93.0 L122.0,103.0 L114.0,98.0 Z" class="solid"/>
+<line x1="114.0" y1="93.0" x2="114.0" y2="103.0" class="w"/>
+<line x1="130.0" y1="98.0" x2="140.0" y2="98.0" class="w"/>
+<circle cx="140.0" cy="98.0" r="2.6" class="solid"/>
+<text x="102.0" y="102.0" class="lab" text-anchor="end">I3</text>
+<line x1="106.0" y1="113.0" x2="114.0" y2="113.0" class="w"/>
+<line x1="122.0" y1="113.0" x2="130.0" y2="113.0" class="w"/>
+<path d="M122.0,108.0 L122.0,118.0 L114.0,113.0 Z" class="solid"/>
+<line x1="114.0" y1="108.0" x2="114.0" y2="118.0" class="w"/>
+<line x1="130.0" y1="113.0" x2="140.0" y2="113.0" class="w"/>
+<circle cx="140.0" cy="113.0" r="2.6" class="solid"/>
+<text x="102.0" y="117.0" class="lab" text-anchor="end">AW</text>
+<line x1="156.0" y1="83.0" x2="164.0" y2="83.0" class="w"/>
+<line x1="172.0" y1="83.0" x2="180.0" y2="83.0" class="w"/>
+<path d="M164.0,78.0 L164.0,88.0 L172.0,83.0 Z" class="solid"/>
+<line x1="172.0" y1="78.0" x2="172.0" y2="88.0" class="w"/>
+<line x1="140.0" y1="83.0" x2="156.0" y2="83.0" class="w"/>
+<line x1="180.0" y1="83.0" x2="190.0" y2="83.0" class="w"/>
+<line x1="133.0" y1="137.0" x2="147.0" y2="137.0" class="w"/>
+<text x="140.0" y="133.0" class="pin" text-anchor="middle">VCC</text>
+<line x1="140.0" y1="137.0" x2="140.0" y2="140.0" class="w"/>
+<rect x="136.0" y="140.0" width="8.0" height="18.0" rx="0" class="box"/>
+<line x1="140.0" y1="158.0" x2="140.0" y2="161.0" class="w"/>
+<text x="132.0" y="153.0" class="val" text-anchor="end">100k</text>
+<line x1="140.0" y1="161.0" x2="140.0" y2="214.0" class="w"/>
+<line x1="106.0" y1="169.0" x2="114.0" y2="169.0" class="w"/>
+<line x1="122.0" y1="169.0" x2="130.0" y2="169.0" class="w"/>
+<path d="M122.0,164.0 L122.0,174.0 L114.0,169.0 Z" class="solid"/>
+<line x1="114.0" y1="164.0" x2="114.0" y2="174.0" class="w"/>
+<line x1="130.0" y1="169.0" x2="140.0" y2="169.0" class="w"/>
+<circle cx="140.0" cy="169.0" r="2.6" class="solid"/>
+<text x="102.0" y="173.0" class="lab" text-anchor="end">ADD</text>
+<line x1="106.0" y1="184.0" x2="114.0" y2="184.0" class="w"/>
+<line x1="122.0" y1="184.0" x2="130.0" y2="184.0" class="w"/>
+<path d="M122.0,179.0 L122.0,189.0 L114.0,184.0 Z" class="solid"/>
+<line x1="114.0" y1="179.0" x2="114.0" y2="189.0" class="w"/>
+<line x1="130.0" y1="184.0" x2="140.0" y2="184.0" class="w"/>
+<circle cx="140.0" cy="184.0" r="2.6" class="solid"/>
+<text x="102.0" y="188.0" class="lab" text-anchor="end">A3</text>
+<line x1="106.0" y1="199.0" x2="114.0" y2="199.0" class="w"/>
+<line x1="122.0" y1="199.0" x2="130.0" y2="199.0" class="w"/>
+<path d="M122.0,194.0 L122.0,204.0 L114.0,199.0 Z" class="solid"/>
+<line x1="114.0" y1="194.0" x2="114.0" y2="204.0" class="w"/>
+<line x1="130.0" y1="199.0" x2="140.0" y2="199.0" class="w"/>
+<circle cx="140.0" cy="199.0" r="2.6" class="solid"/>
+<text x="102.0" y="203.0" class="lab" text-anchor="end">C3</text>
+<line x1="106.0" y1="214.0" x2="114.0" y2="214.0" class="w"/>
+<line x1="122.0" y1="214.0" x2="130.0" y2="214.0" class="w"/>
+<path d="M122.0,209.0 L122.0,219.0 L114.0,214.0 Z" class="solid"/>
+<line x1="114.0" y1="209.0" x2="114.0" y2="219.0" class="w"/>
+<line x1="130.0" y1="214.0" x2="140.0" y2="214.0" class="w"/>
+<circle cx="140.0" cy="214.0" r="2.6" class="solid"/>
+<text x="102.0" y="218.0" class="lab" text-anchor="end">AW</text>
+<line x1="156.0" y1="184.0" x2="164.0" y2="184.0" class="w"/>
+<line x1="172.0" y1="184.0" x2="180.0" y2="184.0" class="w"/>
+<path d="M164.0,179.0 L164.0,189.0 L172.0,184.0 Z" class="solid"/>
+<line x1="172.0" y1="179.0" x2="172.0" y2="189.0" class="w"/>
+<line x1="140.0" y1="184.0" x2="156.0" y2="184.0" class="w"/>
+<line x1="180.0" y1="184.0" x2="190.0" y2="184.0" class="w"/>
+<line x1="133.0" y1="238.0" x2="147.0" y2="238.0" class="w"/>
+<text x="140.0" y="234.0" class="pin" text-anchor="middle">VCC</text>
+<line x1="140.0" y1="238.0" x2="140.0" y2="241.0" class="w"/>
+<rect x="136.0" y="241.0" width="8.0" height="18.0" rx="0" class="box"/>
+<line x1="140.0" y1="259.0" x2="140.0" y2="262.0" class="w"/>
+<text x="132.0" y="254.0" class="val" text-anchor="end">100k</text>
+<line x1="140.0" y1="262.0" x2="140.0" y2="315.0" class="w"/>
+<line x1="106.0" y1="270.0" x2="114.0" y2="270.0" class="w"/>
+<line x1="122.0" y1="270.0" x2="130.0" y2="270.0" class="w"/>
+<path d="M122.0,265.0 L122.0,275.0 L114.0,270.0 Z" class="solid"/>
+<line x1="114.0" y1="265.0" x2="114.0" y2="275.0" class="w"/>
+<line x1="130.0" y1="270.0" x2="140.0" y2="270.0" class="w"/>
+<circle cx="140.0" cy="270.0" r="2.6" class="solid"/>
+<text x="102.0" y="274.0" class="lab" text-anchor="end">ADD</text>
+<line x1="106.0" y1="285.0" x2="114.0" y2="285.0" class="w"/>
+<line x1="122.0" y1="285.0" x2="130.0" y2="285.0" class="w"/>
+<path d="M122.0,280.0 L122.0,290.0 L114.0,285.0 Z" class="solid"/>
+<line x1="114.0" y1="280.0" x2="114.0" y2="290.0" class="w"/>
+<line x1="130.0" y1="285.0" x2="140.0" y2="285.0" class="w"/>
+<circle cx="140.0" cy="285.0" r="2.6" class="solid"/>
+<text x="102.0" y="289.0" class="lab" text-anchor="end">I3</text>
+<line x1="106.0" y1="300.0" x2="114.0" y2="300.0" class="w"/>
+<line x1="122.0" y1="300.0" x2="130.0" y2="300.0" class="w"/>
+<path d="M122.0,295.0 L122.0,305.0 L114.0,300.0 Z" class="solid"/>
+<line x1="114.0" y1="295.0" x2="114.0" y2="305.0" class="w"/>
+<line x1="130.0" y1="300.0" x2="140.0" y2="300.0" class="w"/>
+<circle cx="140.0" cy="300.0" r="2.6" class="solid"/>
+<text x="102.0" y="304.0" class="lab" text-anchor="end">C3</text>
+<line x1="106.0" y1="315.0" x2="114.0" y2="315.0" class="w"/>
+<line x1="122.0" y1="315.0" x2="130.0" y2="315.0" class="w"/>
+<path d="M122.0,310.0 L122.0,320.0 L114.0,315.0 Z" class="solid"/>
+<line x1="114.0" y1="310.0" x2="114.0" y2="320.0" class="w"/>
+<line x1="130.0" y1="315.0" x2="140.0" y2="315.0" class="w"/>
+<circle cx="140.0" cy="315.0" r="2.6" class="solid"/>
+<text x="102.0" y="319.0" class="lab" text-anchor="end">AW</text>
+<line x1="156.0" y1="285.0" x2="164.0" y2="285.0" class="w"/>
+<line x1="172.0" y1="285.0" x2="180.0" y2="285.0" class="w"/>
+<path d="M164.0,280.0 L164.0,290.0 L172.0,285.0 Z" class="solid"/>
+<line x1="172.0" y1="280.0" x2="172.0" y2="290.0" class="w"/>
+<line x1="140.0" y1="285.0" x2="156.0" y2="285.0" class="w"/>
+<line x1="180.0" y1="285.0" x2="190.0" y2="285.0" class="w"/>
+<line x1="133.0" y1="339.0" x2="147.0" y2="339.0" class="w"/>
+<text x="140.0" y="335.0" class="pin" text-anchor="middle">VCC</text>
+<line x1="140.0" y1="339.0" x2="140.0" y2="342.0" class="w"/>
+<rect x="136.0" y="342.0" width="8.0" height="18.0" rx="0" class="box"/>
+<line x1="140.0" y1="360.0" x2="140.0" y2="363.0" class="w"/>
+<text x="132.0" y="355.0" class="val" text-anchor="end">100k</text>
+<line x1="140.0" y1="363.0" x2="140.0" y2="386.0" class="w"/>
+<line x1="106.0" y1="371.0" x2="114.0" y2="371.0" class="w"/>
+<line x1="122.0" y1="371.0" x2="130.0" y2="371.0" class="w"/>
+<path d="M122.0,366.0 L122.0,376.0 L114.0,371.0 Z" class="solid"/>
+<line x1="114.0" y1="366.0" x2="114.0" y2="376.0" class="w"/>
+<line x1="130.0" y1="371.0" x2="140.0" y2="371.0" class="w"/>
+<circle cx="140.0" cy="371.0" r="2.6" class="solid"/>
+<text x="102.0" y="375.0" class="lab" text-anchor="end">nAW</text>
+<line x1="106.0" y1="386.0" x2="114.0" y2="386.0" class="w"/>
+<line x1="122.0" y1="386.0" x2="130.0" y2="386.0" class="w"/>
+<path d="M122.0,381.0 L122.0,391.0 L114.0,386.0 Z" class="solid"/>
+<line x1="114.0" y1="381.0" x2="114.0" y2="391.0" class="w"/>
+<line x1="130.0" y1="386.0" x2="140.0" y2="386.0" class="w"/>
+<circle cx="140.0" cy="386.0" r="2.6" class="solid"/>
+<text x="102.0" y="390.0" class="lab" text-anchor="end">CF</text>
+<line x1="156.0" y1="371.0" x2="164.0" y2="371.0" class="w"/>
+<line x1="172.0" y1="371.0" x2="180.0" y2="371.0" class="w"/>
+<path d="M164.0,366.0 L164.0,376.0 L172.0,371.0 Z" class="solid"/>
+<line x1="172.0" y1="366.0" x2="172.0" y2="376.0" class="w"/>
+<line x1="140.0" y1="371.0" x2="156.0" y2="371.0" class="w"/>
+<line x1="180.0" y1="371.0" x2="190.0" y2="371.0" class="w"/>
+<line x1="156.0" y1="409.0" x2="164.0" y2="409.0" class="w"/>
+<line x1="172.0" y1="409.0" x2="180.0" y2="409.0" class="w"/>
+<path d="M164.0,404.0 L164.0,414.0 L172.0,409.0 Z" class="solid"/>
+<line x1="172.0" y1="404.0" x2="172.0" y2="414.0" class="w"/>
+<line x1="180.0" y1="409.0" x2="190.0" y2="409.0" class="w"/>
+<text x="152.0" y="413.0" class="lab" text-anchor="end">nMEN</text>
+<line x1="190.0" y1="83.0" x2="190.0" y2="432.0" class="bus"/>
+<circle cx="190.0" cy="83.0" r="2.6" class="solid"/>
+<circle cx="190.0" cy="184.0" r="2.6" class="solid"/>
+<circle cx="190.0" cy="285.0" r="2.6" class="solid"/>
+<circle cx="190.0" cy="371.0" r="2.6" class="solid"/>
+<circle cx="190.0" cy="409.0" r="2.6" class="solid"/>
+<circle cx="190.0" cy="426.0" r="2.6" class="solid"/>
+<line x1="190.0" y1="426.0" x2="230.0" y2="426.0" class="w"/>
+<line x1="190.0" y1="432.0" x2="190.0" y2="437.0" class="w"/>
+<rect x="186.0" y="437.0" width="8.0" height="18.0" rx="0" class="box"/>
+<line x1="190.0" y1="455.0" x2="190.0" y2="460.0" class="w"/>
+<text x="198.0" y="450.0" class="val" text-anchor="start">1M</text>
+<line x1="183.0" y1="460.0" x2="197.0" y2="460.0" class="w"/>
+<line x1="185.5" y1="463.0" x2="194.5" y2="463.0" class="w"/>
+<line x1="188.0" y1="466.0" x2="192.0" y2="466.0" class="w"/>
+<line x1="133.0" y1="490.0" x2="147.0" y2="490.0" class="w"/>
+<text x="140.0" y="486.0" class="pin" text-anchor="middle">VCC</text>
+<line x1="140.0" y1="490.0" x2="140.0" y2="493.0" class="w"/>
+<rect x="136.0" y="493.0" width="8.0" height="18.0" rx="0" class="box"/>
+<line x1="140.0" y1="511.0" x2="140.0" y2="514.0" class="w"/>
+<text x="132.0" y="506.0" class="val" text-anchor="end">100k</text>
+<line x1="140.0" y1="514.0" x2="140.0" y2="582.0" class="w"/>
+<line x1="106.0" y1="522.0" x2="114.0" y2="522.0" class="w"/>
+<line x1="122.0" y1="522.0" x2="130.0" y2="522.0" class="w"/>
+<path d="M122.0,517.0 L122.0,527.0 L114.0,522.0 Z" class="solid"/>
+<line x1="114.0" y1="517.0" x2="114.0" y2="527.0" class="w"/>
+<line x1="130.0" y1="522.0" x2="140.0" y2="522.0" class="w"/>
+<circle cx="140.0" cy="522.0" r="2.6" class="solid"/>
+<text x="102.0" y="526.0" class="lab" text-anchor="end">ADD</text>
+<line x1="106.0" y1="537.0" x2="114.0" y2="537.0" class="w"/>
+<line x1="122.0" y1="537.0" x2="130.0" y2="537.0" class="w"/>
+<path d="M122.0,532.0 L122.0,542.0 L114.0,537.0 Z" class="solid"/>
+<line x1="114.0" y1="532.0" x2="114.0" y2="542.0" class="w"/>
+<line x1="130.0" y1="537.0" x2="140.0" y2="537.0" class="w"/>
+<circle cx="140.0" cy="537.0" r="2.6" class="solid"/>
+<text x="102.0" y="541.0" class="lab" text-anchor="end">A3</text>
+<line x1="106.0" y1="552.0" x2="114.0" y2="552.0" class="w"/>
+<line x1="122.0" y1="552.0" x2="130.0" y2="552.0" class="w"/>
+<path d="M122.0,547.0 L122.0,557.0 L114.0,552.0 Z" class="solid"/>
+<line x1="114.0" y1="547.0" x2="114.0" y2="557.0" class="w"/>
+<line x1="130.0" y1="552.0" x2="140.0" y2="552.0" class="w"/>
+<circle cx="140.0" cy="552.0" r="2.6" class="solid"/>
+<text x="102.0" y="556.0" class="lab" text-anchor="end">I3</text>
+<line x1="106.0" y1="567.0" x2="114.0" y2="567.0" class="w"/>
+<line x1="122.0" y1="567.0" x2="130.0" y2="567.0" class="w"/>
+<path d="M122.0,562.0 L122.0,572.0 L114.0,567.0 Z" class="solid"/>
+<line x1="114.0" y1="562.0" x2="114.0" y2="572.0" class="w"/>
+<line x1="130.0" y1="567.0" x2="140.0" y2="567.0" class="w"/>
+<circle cx="140.0" cy="567.0" r="2.6" class="solid"/>
+<text x="102.0" y="571.0" class="lab" text-anchor="end">AW</text>
+<line x1="106.0" y1="582.0" x2="114.0" y2="582.0" class="w"/>
+<line x1="122.0" y1="582.0" x2="130.0" y2="582.0" class="w"/>
+<path d="M122.0,577.0 L122.0,587.0 L114.0,582.0 Z" class="solid"/>
+<line x1="114.0" y1="577.0" x2="114.0" y2="587.0" class="w"/>
+<line x1="130.0" y1="582.0" x2="140.0" y2="582.0" class="w"/>
+<circle cx="140.0" cy="582.0" r="2.6" class="solid"/>
+<text x="102.0" y="586.0" class="lab" text-anchor="end">MEN</text>
+<line x1="156.0" y1="552.0" x2="164.0" y2="552.0" class="w"/>
+<line x1="172.0" y1="552.0" x2="180.0" y2="552.0" class="w"/>
+<path d="M164.0,547.0 L164.0,557.0 L172.0,552.0 Z" class="solid"/>
+<line x1="172.0" y1="547.0" x2="172.0" y2="557.0" class="w"/>
+<line x1="140.0" y1="552.0" x2="156.0" y2="552.0" class="w"/>
+<line x1="180.0" y1="552.0" x2="190.0" y2="552.0" class="w"/>
+<line x1="133.0" y1="606.0" x2="147.0" y2="606.0" class="w"/>
+<text x="140.0" y="602.0" class="pin" text-anchor="middle">VCC</text>
+<line x1="140.0" y1="606.0" x2="140.0" y2="609.0" class="w"/>
+<rect x="136.0" y="609.0" width="8.0" height="18.0" rx="0" class="box"/>
+<line x1="140.0" y1="627.0" x2="140.0" y2="630.0" class="w"/>
+<text x="132.0" y="622.0" class="val" text-anchor="end">100k</text>
+<line x1="140.0" y1="630.0" x2="140.0" y2="698.0" class="w"/>
+<line x1="106.0" y1="638.0" x2="114.0" y2="638.0" class="w"/>
+<line x1="122.0" y1="638.0" x2="130.0" y2="638.0" class="w"/>
+<path d="M122.0,633.0 L122.0,643.0 L114.0,638.0 Z" class="solid"/>
+<line x1="114.0" y1="633.0" x2="114.0" y2="643.0" class="w"/>
+<line x1="130.0" y1="638.0" x2="140.0" y2="638.0" class="w"/>
+<circle cx="140.0" cy="638.0" r="2.6" class="solid"/>
+<text x="102.0" y="642.0" class="lab" text-anchor="end">ADD</text>
+<line x1="106.0" y1="653.0" x2="114.0" y2="653.0" class="w"/>
+<line x1="122.0" y1="653.0" x2="130.0" y2="653.0" class="w"/>
+<path d="M122.0,648.0 L122.0,658.0 L114.0,653.0 Z" class="solid"/>
+<line x1="114.0" y1="648.0" x2="114.0" y2="658.0" class="w"/>
+<line x1="130.0" y1="653.0" x2="140.0" y2="653.0" class="w"/>
+<circle cx="140.0" cy="653.0" r="2.6" class="solid"/>
+<text x="102.0" y="657.0" class="lab" text-anchor="end">A3</text>
+<line x1="106.0" y1="668.0" x2="114.0" y2="668.0" class="w"/>
+<line x1="122.0" y1="668.0" x2="130.0" y2="668.0" class="w"/>
+<path d="M122.0,663.0 L122.0,673.0 L114.0,668.0 Z" class="solid"/>
+<line x1="114.0" y1="663.0" x2="114.0" y2="673.0" class="w"/>
+<line x1="130.0" y1="668.0" x2="140.0" y2="668.0" class="w"/>
+<circle cx="140.0" cy="668.0" r="2.6" class="solid"/>
+<text x="102.0" y="672.0" class="lab" text-anchor="end">C3</text>
+<line x1="106.0" y1="683.0" x2="114.0" y2="683.0" class="w"/>
+<line x1="122.0" y1="683.0" x2="130.0" y2="683.0" class="w"/>
+<path d="M122.0,678.0 L122.0,688.0 L114.0,683.0 Z" class="solid"/>
+<line x1="114.0" y1="678.0" x2="114.0" y2="688.0" class="w"/>
+<line x1="130.0" y1="683.0" x2="140.0" y2="683.0" class="w"/>
+<circle cx="140.0" cy="683.0" r="2.6" class="solid"/>
+<text x="102.0" y="687.0" class="lab" text-anchor="end">AW</text>
+<line x1="106.0" y1="698.0" x2="114.0" y2="698.0" class="w"/>
+<line x1="122.0" y1="698.0" x2="130.0" y2="698.0" class="w"/>
+<path d="M122.0,693.0 L122.0,703.0 L114.0,698.0 Z" class="solid"/>
+<line x1="114.0" y1="693.0" x2="114.0" y2="703.0" class="w"/>
+<line x1="130.0" y1="698.0" x2="140.0" y2="698.0" class="w"/>
+<circle cx="140.0" cy="698.0" r="2.6" class="solid"/>
+<text x="102.0" y="702.0" class="lab" text-anchor="end">MEN</text>
+<line x1="156.0" y1="668.0" x2="164.0" y2="668.0" class="w"/>
+<line x1="172.0" y1="668.0" x2="180.0" y2="668.0" class="w"/>
+<path d="M164.0,663.0 L164.0,673.0 L172.0,668.0 Z" class="solid"/>
+<line x1="172.0" y1="663.0" x2="172.0" y2="673.0" class="w"/>
+<line x1="140.0" y1="668.0" x2="156.0" y2="668.0" class="w"/>
+<line x1="180.0" y1="668.0" x2="190.0" y2="668.0" class="w"/>
+<line x1="133.0" y1="722.0" x2="147.0" y2="722.0" class="w"/>
+<text x="140.0" y="718.0" class="pin" text-anchor="middle">VCC</text>
+<line x1="140.0" y1="722.0" x2="140.0" y2="725.0" class="w"/>
+<rect x="136.0" y="725.0" width="8.0" height="18.0" rx="0" class="box"/>
+<line x1="140.0" y1="743.0" x2="140.0" y2="746.0" class="w"/>
+<text x="132.0" y="738.0" class="val" text-anchor="end">100k</text>
+<line x1="140.0" y1="746.0" x2="140.0" y2="814.0" class="w"/>
+<line x1="106.0" y1="754.0" x2="114.0" y2="754.0" class="w"/>
+<line x1="122.0" y1="754.0" x2="130.0" y2="754.0" class="w"/>
+<path d="M122.0,749.0 L122.0,759.0 L114.0,754.0 Z" class="solid"/>
+<line x1="114.0" y1="749.0" x2="114.0" y2="759.0" class="w"/>
+<line x1="130.0" y1="754.0" x2="140.0" y2="754.0" class="w"/>
+<circle cx="140.0" cy="754.0" r="2.6" class="solid"/>
+<text x="102.0" y="758.0" class="lab" text-anchor="end">ADD</text>
+<line x1="106.0" y1="769.0" x2="114.0" y2="769.0" class="w"/>
+<line x1="122.0" y1="769.0" x2="130.0" y2="769.0" class="w"/>
+<path d="M122.0,764.0 L122.0,774.0 L114.0,769.0 Z" class="solid"/>
+<line x1="114.0" y1="764.0" x2="114.0" y2="774.0" class="w"/>
+<line x1="130.0" y1="769.0" x2="140.0" y2="769.0" class="w"/>
+<circle cx="140.0" cy="769.0" r="2.6" class="solid"/>
+<text x="102.0" y="773.0" class="lab" text-anchor="end">I3</text>
+<line x1="106.0" y1="784.0" x2="114.0" y2="784.0" class="w"/>
+<line x1="122.0" y1="784.0" x2="130.0" y2="784.0" class="w"/>
+<path d="M122.0,779.0 L122.0,789.0 L114.0,784.0 Z" class="solid"/>
+<line x1="114.0" y1="779.0" x2="114.0" y2="789.0" class="w"/>
+<line x1="130.0" y1="784.0" x2="140.0" y2="784.0" class="w"/>
+<circle cx="140.0" cy="784.0" r="2.6" class="solid"/>
+<text x="102.0" y="788.0" class="lab" text-anchor="end">C3</text>
+<line x1="106.0" y1="799.0" x2="114.0" y2="799.0" class="w"/>
+<line x1="122.0" y1="799.0" x2="130.0" y2="799.0" class="w"/>
+<path d="M122.0,794.0 L122.0,804.0 L114.0,799.0 Z" class="solid"/>
+<line x1="114.0" y1="794.0" x2="114.0" y2="804.0" class="w"/>
+<line x1="130.0" y1="799.0" x2="140.0" y2="799.0" class="w"/>
+<circle cx="140.0" cy="799.0" r="2.6" class="solid"/>
+<text x="102.0" y="803.0" class="lab" text-anchor="end">AW</text>
+<line x1="106.0" y1="814.0" x2="114.0" y2="814.0" class="w"/>
+<line x1="122.0" y1="814.0" x2="130.0" y2="814.0" class="w"/>
+<path d="M122.0,809.0 L122.0,819.0 L114.0,814.0 Z" class="solid"/>
+<line x1="114.0" y1="809.0" x2="114.0" y2="819.0" class="w"/>
+<line x1="130.0" y1="814.0" x2="140.0" y2="814.0" class="w"/>
+<circle cx="140.0" cy="814.0" r="2.6" class="solid"/>
+<text x="102.0" y="818.0" class="lab" text-anchor="end">MEN</text>
+<line x1="156.0" y1="784.0" x2="164.0" y2="784.0" class="w"/>
+<line x1="172.0" y1="784.0" x2="180.0" y2="784.0" class="w"/>
+<path d="M164.0,779.0 L164.0,789.0 L172.0,784.0 Z" class="solid"/>
+<line x1="172.0" y1="779.0" x2="172.0" y2="789.0" class="w"/>
+<line x1="140.0" y1="784.0" x2="156.0" y2="784.0" class="w"/>
+<line x1="180.0" y1="784.0" x2="190.0" y2="784.0" class="w"/>
+<line x1="133.0" y1="838.0" x2="147.0" y2="838.0" class="w"/>
+<text x="140.0" y="834.0" class="pin" text-anchor="middle">VCC</text>
+<line x1="140.0" y1="838.0" x2="140.0" y2="841.0" class="w"/>
+<rect x="136.0" y="841.0" width="8.0" height="18.0" rx="0" class="box"/>
+<line x1="140.0" y1="859.0" x2="140.0" y2="862.0" class="w"/>
+<text x="132.0" y="854.0" class="val" text-anchor="end">100k</text>
+<line x1="140.0" y1="862.0" x2="140.0" y2="900.0" class="w"/>
+<line x1="106.0" y1="870.0" x2="114.0" y2="870.0" class="w"/>
+<line x1="122.0" y1="870.0" x2="130.0" y2="870.0" class="w"/>
+<path d="M122.0,865.0 L122.0,875.0 L114.0,870.0 Z" class="solid"/>
+<line x1="114.0" y1="865.0" x2="114.0" y2="875.0" class="w"/>
+<line x1="130.0" y1="870.0" x2="140.0" y2="870.0" class="w"/>
+<circle cx="140.0" cy="870.0" r="2.6" class="solid"/>
+<text x="102.0" y="874.0" class="lab" text-anchor="end">nAW</text>
+<line x1="106.0" y1="885.0" x2="114.0" y2="885.0" class="w"/>
+<line x1="122.0" y1="885.0" x2="130.0" y2="885.0" class="w"/>
+<path d="M122.0,880.0 L122.0,890.0 L114.0,885.0 Z" class="solid"/>
+<line x1="114.0" y1="880.0" x2="114.0" y2="890.0" class="w"/>
+<line x1="130.0" y1="885.0" x2="140.0" y2="885.0" class="w"/>
+<circle cx="140.0" cy="885.0" r="2.6" class="solid"/>
+<text x="102.0" y="889.0" class="lab" text-anchor="end">CF</text>
+<line x1="106.0" y1="900.0" x2="114.0" y2="900.0" class="w"/>
+<line x1="122.0" y1="900.0" x2="130.0" y2="900.0" class="w"/>
+<path d="M122.0,895.0 L122.0,905.0 L114.0,900.0 Z" class="solid"/>
+<line x1="114.0" y1="895.0" x2="114.0" y2="905.0" class="w"/>
+<line x1="130.0" y1="900.0" x2="140.0" y2="900.0" class="w"/>
+<circle cx="140.0" cy="900.0" r="2.6" class="solid"/>
+<text x="102.0" y="904.0" class="lab" text-anchor="end">MEN</text>
+<line x1="156.0" y1="885.0" x2="164.0" y2="885.0" class="w"/>
+<line x1="172.0" y1="885.0" x2="180.0" y2="885.0" class="w"/>
+<path d="M164.0,880.0 L164.0,890.0 L172.0,885.0 Z" class="solid"/>
+<line x1="172.0" y1="880.0" x2="172.0" y2="890.0" class="w"/>
+<line x1="140.0" y1="885.0" x2="156.0" y2="885.0" class="w"/>
+<line x1="180.0" y1="885.0" x2="190.0" y2="885.0" class="w"/>
+<line x1="190.0" y1="552.0" x2="190.0" y2="926.0" class="bus"/>
+<circle cx="190.0" cy="552.0" r="2.6" class="solid"/>
+<circle cx="190.0" cy="668.0" r="2.6" class="solid"/>
+<circle cx="190.0" cy="784.0" r="2.6" class="solid"/>
+<circle cx="190.0" cy="885.0" r="2.6" class="solid"/>
+<circle cx="190.0" cy="920.0" r="2.6" class="solid"/>
+<line x1="190.0" y1="920.0" x2="230.0" y2="920.0" class="w"/>
+<line x1="190.0" y1="926.0" x2="190.0" y2="931.0" class="w"/>
+<rect x="186.0" y="931.0" width="8.0" height="18.0" rx="0" class="box"/>
+<line x1="190.0" y1="949.0" x2="190.0" y2="954.0" class="w"/>
+<text x="198.0" y="944.0" class="val" text-anchor="start">1M</text>
+<line x1="183.0" y1="954.0" x2="197.0" y2="954.0" class="w"/>
+<line x1="185.5" y1="957.0" x2="194.5" y2="957.0" class="w"/>
+<line x1="188.0" y1="960.0" x2="192.0" y2="960.0" class="w"/>
+<rect x="244.0" y="26.0" width="96.0" height="924.0" rx="3" class="box"/>
+<text x="292.0" y="484.0" class="un" text-anchor="middle">U22B</text>
+<text x="292.0" y="499.0" class="pin" text-anchor="middle">LATCH</text>
+<text x="292.0" y="511.0" class="pin" text-anchor="middle">mCF</text>
+<line x1="230.0" y1="426.0" x2="244.0" y2="426.0" class="w"/>
+<text x="247.0" y="429.0" class="pin" text-anchor="start">TRIG</text>
+<text x="241.0" y="423.0" class="pin" text-anchor="end">8</text>
+<line x1="230.0" y1="920.0" x2="244.0" y2="920.0" class="w"/>
+<text x="247.0" y="923.0" class="pin" text-anchor="start">THR</text>
+<text x="241.0" y="917.0" class="pin" text-anchor="end">12</text>
+<line x1="292.0" y1="12.0" x2="292.0" y2="26.0" class="w"/>
+<text x="292.0" y="36.0" class="pin" text-anchor="middle">RST</text>
+<text x="295.0" y="21.0" class="pin" text-anchor="start">10</text>
+<line x1="340.0" y1="673.0" x2="354.0" y2="673.0" class="w"/>
+<text x="337.0" y="676.0" class="pin" text-anchor="end">OUT</text>
+<text x="343.0" y="670.0" class="pin" text-anchor="start">9</text>
+<line x1="285.0" y1="12.0" x2="299.0" y2="12.0" class="w"/>
+<text x="292.0" y="8.0" class="pin" text-anchor="middle">VCC</text>
+<line x1="354.0" y1="673.0" x2="370.0" y2="673.0" class="w"/>
+<circle cx="370.0" cy="673.0" r="2.6" class="solid"/>
+<text x="374.0" y="677.0" class="lab" text-anchor="start">mCF</text>
+</g>
+<g transform="translate(255.5,0.0)">
+<line x1="156.0" y1="35.0" x2="164.0" y2="35.0" class="w"/>
+<line x1="172.0" y1="35.0" x2="180.0" y2="35.0" class="w"/>
+<path d="M164.0,30.0 L164.0,40.0 L172.0,35.0 Z" class="solid"/>
+<line x1="172.0" y1="30.0" x2="172.0" y2="40.0" class="w"/>
+<line x1="180.0" y1="35.0" x2="190.0" y2="35.0" class="w"/>
+<text x="152.0" y="39.0" class="lab" text-anchor="end">mCF</text>
+<line x1="156.0" y1="55.0" x2="164.0" y2="55.0" class="w"/>
+<line x1="172.0" y1="55.0" x2="180.0" y2="55.0" class="w"/>
+<path d="M164.0,50.0 L164.0,60.0 L172.0,55.0 Z" class="solid"/>
+<line x1="172.0" y1="50.0" x2="172.0" y2="60.0" class="w"/>
+<line x1="180.0" y1="55.0" x2="190.0" y2="55.0" class="w"/>
+<text x="152.0" y="59.0" class="lab" text-anchor="end">nSEN</text>
+<line x1="190.0" y1="35.0" x2="190.0" y2="78.0" class="bus"/>
+<circle cx="190.0" cy="35.0" r="2.6" class="solid"/>
+<circle cx="190.0" cy="55.0" r="2.6" class="solid"/>
+<circle cx="190.0" cy="72.0" r="2.6" class="solid"/>
+<line x1="190.0" y1="72.0" x2="230.0" y2="72.0" class="w"/>
+<line x1="190.0" y1="78.0" x2="190.0" y2="83.0" class="w"/>
+<rect x="186.0" y="83.0" width="8.0" height="18.0" rx="0" class="box"/>
+<line x1="190.0" y1="101.0" x2="190.0" y2="106.0" class="w"/>
+<text x="198.0" y="96.0" class="val" text-anchor="start">1M</text>
+<line x1="183.0" y1="106.0" x2="197.0" y2="106.0" class="w"/>
+<line x1="185.5" y1="109.0" x2="194.5" y2="109.0" class="w"/>
+<line x1="188.0" y1="112.0" x2="192.0" y2="112.0" class="w"/>
+<line x1="183.0" y1="136.0" x2="197.0" y2="136.0" class="w"/>
+<text x="190.0" y="132.0" class="pin" text-anchor="middle">VCC</text>
+<line x1="190.0" y1="136.0" x2="190.0" y2="140.0" class="w"/>
+<rect x="186.0" y="140.0" width="8.0" height="18.0" rx="0" class="box"/>
+<line x1="190.0" y1="158.0" x2="190.0" y2="162.0" class="w"/>
+<text x="198.0" y="153.0" class="val" text-anchor="start">100k</text>
+<line x1="190.0" y1="162.0" x2="190.0" y2="185.0" class="w"/>
+<line x1="156.0" y1="170.0" x2="164.0" y2="170.0" class="w"/>
+<line x1="172.0" y1="170.0" x2="180.0" y2="170.0" class="w"/>
+<path d="M172.0,165.0 L172.0,175.0 L164.0,170.0 Z" class="solid"/>
+<line x1="164.0" y1="165.0" x2="164.0" y2="175.0" class="w"/>
+<line x1="180.0" y1="170.0" x2="190.0" y2="170.0" class="w"/>
+<circle cx="190.0" cy="170.0" r="2.6" class="solid"/>
+<text x="152.0" y="174.0" class="lab" text-anchor="end">mCF</text>
+<line x1="156.0" y1="185.0" x2="164.0" y2="185.0" class="w"/>
+<line x1="172.0" y1="185.0" x2="180.0" y2="185.0" class="w"/>
+<path d="M172.0,180.0 L172.0,190.0 L164.0,185.0 Z" class="solid"/>
+<line x1="164.0" y1="180.0" x2="164.0" y2="190.0" class="w"/>
+<line x1="180.0" y1="185.0" x2="190.0" y2="185.0" class="w"/>
+<circle cx="190.0" cy="185.0" r="2.6" class="solid"/>
+<text x="152.0" y="189.0" class="lab" text-anchor="end">SEN</text>
+<line x1="190.0" y1="185.0" x2="230.0" y2="185.0" class="w"/>
+<rect x="244.0" y="26.0" width="96.0" height="189.0" rx="3" class="box"/>
+<text x="292.0" y="116.5" class="un" text-anchor="middle">U23A</text>
+<text x="292.0" y="131.5" class="pin" text-anchor="middle">LATCH</text>
+<text x="292.0" y="143.5" class="pin" text-anchor="middle">CF</text>
+<line x1="230.0" y1="72.0" x2="244.0" y2="72.0" class="w"/>
+<text x="247.0" y="75.0" class="pin" text-anchor="start">TRIG</text>
+<text x="241.0" y="69.0" class="pin" text-anchor="end">6</text>
+<line x1="230.0" y1="185.0" x2="244.0" y2="185.0" class="w"/>
+<text x="247.0" y="188.0" class="pin" text-anchor="start">THR</text>
+<text x="241.0" y="182.0" class="pin" text-anchor="end">2</text>
+<line x1="292.0" y1="12.0" x2="292.0" y2="26.0" class="w"/>
+<text x="292.0" y="36.0" class="pin" text-anchor="middle">RST</text>
+<text x="295.0" y="21.0" class="pin" text-anchor="start">4</text>
+<line x1="340.0" y1="128.5" x2="354.0" y2="128.5" class="w"/>
+<text x="337.0" y="131.5" class="pin" text-anchor="end">OUT</text>
+<text x="343.0" y="125.5" class="pin" text-anchor="start">5</text>
+<line x1="292.0" y1="12.0" x2="292.0" y2="4.0" class="w"/>
+<text x="292.0" y="4.0" class="lab" text-anchor="middle">nRST</text>
+<line x1="354.0" y1="128.5" x2="370.0" y2="128.5" class="w"/>
+<circle cx="370.0" cy="128.5" r="2.6" class="solid"/>
+<text x="374.0" y="132.5" class="lab" text-anchor="start">CF</text>
+</g>
+<g transform="translate(506.5,0.0)">
+<text x="226.0" y="38.0" class="lab" text-anchor="end">CF</text>
+<line x1="228.0" y1="34.0" x2="230.0" y2="34.0" class="w"/>
+<line x1="230.0" y1="34.0" x2="236.0" y2="34.0" class="w"/>
+<line x1="236.0" y1="22.0" x2="236.0" y2="46.0" class="w"/>
+<circle cx="236.0" cy="34.0" r="2.6" class="solid"/>
+<line x1="236.0" y1="22.0" x2="244.0" y2="22.0" class="w"/>
+<line x1="236.0" y1="46.0" x2="244.0" y2="46.0" class="w"/>
+<rect x="258.0" y="0.0" width="96.0" height="68.0" rx="3" class="box"/>
+<text x="306.0" y="30.0" class="un" text-anchor="middle">U23B</text>
+<text x="306.0" y="45.0" class="pin" text-anchor="middle">INV</text>
+<text x="306.0" y="57.0" class="pin" text-anchor="middle">nCF</text>
+<line x1="244.0" y1="22.0" x2="258.0" y2="22.0" class="w"/>
+<text x="261.0" y="25.0" class="pin" text-anchor="start">TRIG</text>
+<text x="255.0" y="19.0" class="pin" text-anchor="end">8</text>
+<line x1="244.0" y1="46.0" x2="258.0" y2="46.0" class="w"/>
+<text x="261.0" y="49.0" class="pin" text-anchor="start">THR</text>
+<text x="255.0" y="43.0" class="pin" text-anchor="end">12</text>
+<line x1="306.0" y1="-14.0" x2="306.0" y2="0.0" class="w"/>
+<text x="306.0" y="10.0" class="pin" text-anchor="middle">RST</text>
+<text x="309.0" y="-5.0" class="pin" text-anchor="start">10</text>
+<line x1="354.0" y1="34.0" x2="368.0" y2="34.0" class="w"/>
+<text x="351.0" y="37.0" class="pin" text-anchor="end">OUT</text>
+<text x="357.0" y="31.0" class="pin" text-anchor="start">9</text>
+<line x1="299.0" y1="-14.0" x2="313.0" y2="-14.0" class="w"/>
+<text x="306.0" y="-18.0" class="pin" text-anchor="middle">VCC</text>
+<line x1="368.0" y1="34.0" x2="384.0" y2="34.0" class="w"/>
+<circle cx="384.0" cy="34.0" r="2.6" class="solid"/>
+<text x="388.0" y="38.0" class="lab" text-anchor="start">nCF</text>
+</g>
+</g>
+</svg>
